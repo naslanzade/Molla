@@ -1,3 +1,5 @@
+@import url(../../../assets/scss/partials/_variables.scss);
+
 #header-top {
     background-color: #333;
 
@@ -13,7 +15,7 @@
 
             a {
                 text-decoration: none;
-                color: #ccc;
+                color: $text-color;
                 font-size: 13px;
             }
         }
@@ -27,7 +29,7 @@
                 padding: 10px;
 
                 a {
-                    color: #ccc;
+                    color: $text-color;
                     font-size: 13px;
                     text-decoration: none;
                     display: block;
@@ -41,30 +43,26 @@
                     background-color: white;
                     padding: 0;
 
-
                     li {
 
                         text-align: center;
                         list-style: none;
-                        color: #ccc;
+                        color: $text-color;
                         font-size: 13px;
-
                     }
-
                 }
 
                 a:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
 
                 i:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
 
                 li:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
-
             }
 
 
@@ -72,12 +70,11 @@
                 padding: 10px;
 
                 a {
-                    color: #ccc;
+                    color: $text-color;
                     font-size: 13px;
                     text-decoration: none;
                     display: block;
                 }
-
 
                 ul {
                     display: none;
@@ -86,30 +83,27 @@
                     background-color: white;
                     padding: 0;
 
-
                     li {
 
                         text-align: center;
                         list-style: none;
-                        color: #ccc;
+                        color: $text-color;
                         font-size: 13px;
 
                     }
-
                 }
 
                 a:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
 
                 i:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
 
                 li:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
-
             }
 
 
@@ -118,26 +112,16 @@
 
                 a {
                     text-decoration: none;
-                    color: #ccc;
+                    color: $text-color;
                     font-size: 13px;
                 }
 
-
                 a:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
             }
-
-
-
         }
-
-
-
-
     }
-
-
 
     .heading-down {
         margin-top: 30px;
@@ -165,16 +149,11 @@
                 top: 18px;
                 left: 20px;
                 transform: rotate(90deg);
-
             }
-
 
             i:hover {
-                color: rgb(248, 191, 86);
+                color: $hover-color;
             }
-
-
-
         }
 
         .right-icon {
@@ -186,69 +165,391 @@
             .random {
                 text-align: center;
 
-                i{
+                i {
                     font-size: 25px;
                     cursor: pointer;
 
                 }
+
                 i:hover {
-                    color: rgb(248, 191, 86);
-                }
-                p{
-                    color: #ccc;
-                    font-size: 13px;
+                    color: $hover-color;
                 }
 
-                sup{
-                    
-                   
+                p {
+                    color: $text-color;
+                    font-size: 13px;
                 }
             }
 
 
             .favorite {
                 text-align: center;
+                position: relative;
 
-                i{
+                i {
                     font-size: 25px;
                     cursor: pointer;
 
                 }
+
                 i:hover {
-                    color: rgb(248, 191, 86);
+                    color: $hover-color;
                 }
-                p{
-                    color: #ccc;
+
+                p {
+                    color: $text-color;
                     font-size: 13px;
+                }
+
+                span {
+                    padding: 0;
+                    z-index: 1;
+                    line-height: 1;
+                    position: absolute;
+                    font-size: 15px;
+                    border-radius: 50%;
+                    color: #333;
+                    top: -5px;
+                    right: 2px;
+                    font-weight: 400;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $hover-color;
+
                 }
             }
 
 
             .cart {
                 text-align: center;
+                position: relative;
 
-                i{
+                i {
                     font-size: 25px;
                     cursor: pointer;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                }
+
+                p {
+                    color: $text-color;
+                    font-size: 13px;
+                }
+
+                span {
+                    padding: 0;
+                    z-index: 1;
+                    line-height: 1;
+                    position: absolute;
+                    font-size: 15px;
+                    border-radius: 50%;
+                    color: #333;
+                    top: -5px;
+                    right: -6px;
+                    font-weight: 400;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #header-top .heading-down .search {
+        display: none;
+    }
+
+    #header-top .heading-down {
+
+        .right-icon {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+
+        }
+
+        .random {
+            position: absolute;
+            right: 100px;
+        }
+
+        .favorite {
+            position: absolute;
+            right: 20px;
+        }
+
+
+        .cart {
+            position: absolute;
+            right: 7px;
+        }
+    }
+
+
+}
+
+#nav {
+    border-bottom: 1px black solid;
+
+    .nav-area {
+        display: flex;
+        justify-content: space-between;
+
+
+        .left {
+            padding: 10px;
+
+            ul {
+                list-style: none;
+                position: relative;
+
+                li {
+                    position: relative;
+                    width: 230px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-weight: 500;
+
+                        .chevron {
+                            margin-left: 50px;
+                            font-size: 8px;
+                        }
+
+                        .bars {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    a:hover {
+                        color: #fff;
+                    }
+
 
                 }
-                i:hover {
-                    color: rgb(248, 191, 86);
+
+
+            }
+        }
+
+        .left:hover {
+            background-color: $hover-color;
+        }
+
+
+        .middle {
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+
+                .home {}
+            }
+        }
+    }
+
+
+}
+
+#slider {
+    .main {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        .banners {
+            position: relative;
+
+            .banner {
+                position: relative;
+
+                .image {
+                    height: 130px;
+                    width: 450px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-                p{
-                    color: #ccc;
-                    font-size: 13px;
+
+                .text {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px;
+                    width: 130px;
+                    height: 100px;
+
+
+                    .product {
+                        font-size: 15px;
+                        color: #a8a6a6;
+                    }
+
+
+                    .desc {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        color: black;
+                        margin-top: -15px;
+                    }
+
+                    .price {
+                        margin-top: -15px;
+                        font-size: 15px;
+                    }
+
+                    .desc-1 {
+                        margin-top: -15px;
+                        font-size: 15px;
+                    }
+
+                    p:hover {
+                        cursor: pointer;
+                        color: $hover-color;
+                    }
+                }
+
+                .shop-now {
+                    position: absolute;
+                    bottom: 13px;
+                    left: 10px;
+                    width: 200px;
+
+                    a {
+                        text-decoration: none;
+                        color: $hover-color;
+                    }
+
+                    a:hover {
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        background-color: $hover-color;
+                        color: white;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .slide-main {
+            width: 750px;
+            height: 400px;
+            position: relative;
+
+            .left-image {
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+
+                .active-image {
+                    opacity: 1 !important;
                 }
             }
 
+            i {
+                position: absolute;
+                z-index: 1;
+                cursor: pointer;
+                font-size: 12px;
+                color: #666;
+                top: 200px;
+                transition: all 0.5s;
+            }
 
+            i:hover {
+                color: $hover-color;
+            }
 
+            .left {
+                left: 20px;
+            }
 
-
+            .right {
+                right: 20px;
+            }
         }
+
+
 
 
 
     }
 
+
+
+
+
+
+}
+
+
+#tab-menu {
+    margin-top: 50px;
+
+    .headers {
+
+        position: relative;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            list-style: none;
+
+
+            li {
+                position: relative;
+                padding-left: 20px;
+                font-size: 30px;
+                color: #bfbdbd;
+
+            }
+
+        }
+
+        .active-menu {
+            color: black !important;
+            transition: all 0.5s;
+        }
+
+        .item:hover {
+            color: $hover-color;
+            cursor: pointer;
+        }
+    }
+
+    .contents {
+        .cart {
+            .product {
+                position: relative;
+            }
+
+            .sale {
+                position: absolute;
+                bottom: 20px;
+
+                p {
+                    color: red;
+                }
+            }
+        }
+    }
 }

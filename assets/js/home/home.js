@@ -1,43 +1,72 @@
-$(function(){
-    let list=$(".dropdown-list")
-    let link=$(".dropdown-link")
+$(document).ready(function () {
+    let leftIcon = document.querySelector(".owl-carousel .left");
+    let rightIcon = document.querySelector(".owl-carousel .right");
+    function rightSlider() {
+        let activeImage = document.querySelector(".active-image");
+        activeImage.classList.remove("active-image");
+        if (activeImage.nextElementSibling != null) {
+            activeImage.nextElementSibling.classList.add("active-image");
+        } else {
+            activeImage.parentNode.firstElementChild.classList.add("active-image");
+        }
 
-    link.click(function(e){
-        e.preventDefault();
-        list.slideToggle()
-    });
+    }
 
-    list.find("li").click(function(){
+    function leftSlider() {
+        let activeImage = document.querySelector(".active-image");
+        activeImage.classList.remove("active-image");
+        if (activeImage.previousElementSibling != null) {
+            activeImage.previousElementSibling.classList.add("active-image");
+        } else {
+            activeImage.parentNode.lastElementChild.classList.add("active-image");
+        }
+    }
+    leftIcon.addEventListener("click", leftSlider);
+    rightIcon.addEventListener("click", rightSlider);
 
-        let text=$(this).html();
-        let icon="<i class=fa-solid fa-chevron-down></i>";
 
-        link.html(text+icon);
-        list.styleToggle();
-
-    })  
-
-})
-
-$(function(){
-    let listLang=$(".dropdown-list-lang")
-    let linkLang=$(".dropdown-link-lang")
     
-    linkLang.click(function(e){
-        e.preventDefault();
-        listLang.slideToggle()
-    });
-    
-    listLang.find("li").click(function(){
-    
-        let text=$(this).html();
-        let icon="<i class=fa-solid fa-chevron-down></i>";
-    
-        linkLang.html(text+icon);
-        listLang.styleToggle();
-    
+  
+    $(".headers .item").click(function () {
+
+        $(".active-menu").removeClass("active-menu")
+        $(this).addClass("active-menu")
+
+
+        let elements= $(".contents .item")
+        for (const content of $(elements)) {
+            if ($(this).attr("data-id") == $(content).attr("data-id")) {
+                $(content).removeClass("d-none")
+            } 
+            else 
+            {
+                $(content).addClass("d-none")
+            }
+        }
+
     })
 
 
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
+
+
+
+

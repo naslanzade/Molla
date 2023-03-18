@@ -142,6 +142,7 @@
 }
 #header-top .heading-down .right-icon .favorite {
   text-align: center;
+  position: relative;
 }
 #header-top .heading-down .right-icon .favorite i {
   font-size: 25px;
@@ -154,8 +155,24 @@
   color: #ccc;
   font-size: 13px;
 }
+#header-top .heading-down .right-icon .favorite span {
+  padding: 0;
+  z-index: 1;
+  line-height: 1;
+  position: absolute;
+  font-size: 15px;
+  border-radius: 50%;
+  color: #333;
+  top: -5px;
+  right: 2px;
+  font-weight: 400;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(248, 191, 86);
+}
 #header-top .heading-down .right-icon .cart {
   text-align: center;
+  position: relative;
 }
 #header-top .heading-down .right-icon .cart i {
   font-size: 25px;
@@ -167,4 +184,214 @@
 #header-top .heading-down .right-icon .cart p {
   color: #ccc;
   font-size: 13px;
+}
+#header-top .heading-down .right-icon .cart span {
+  padding: 0;
+  z-index: 1;
+  line-height: 1;
+  position: absolute;
+  font-size: 15px;
+  border-radius: 50%;
+  color: #333;
+  top: -5px;
+  right: -6px;
+  font-weight: 400;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(248, 191, 86);
+}
+
+@media screen and (max-width: 992px) {
+  #header-top .heading-down .search {
+    display: none;
+  }
+  #header-top .heading-down .right-icon {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  #header-top .heading-down .random {
+    position: absolute;
+    right: 100px;
+  }
+  #header-top .heading-down .favorite {
+    position: absolute;
+    right: 20px;
+  }
+  #header-top .heading-down .cart {
+    position: absolute;
+    right: 7px;
+  }
+}
+#nav {
+  border-bottom: 1px black solid;
+}
+#nav .nav-area {
+  display: flex;
+  justify-content: space-between;
+}
+#nav .nav-area .left {
+  padding: 10px;
+}
+#nav .nav-area .left ul {
+  list-style: none;
+  position: relative;
+}
+#nav .nav-area .left ul li {
+  position: relative;
+  width: 230px;
+  text-align: center;
+}
+#nav .nav-area .left ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+#nav .nav-area .left ul li a .chevron {
+  margin-left: 50px;
+  font-size: 8px;
+}
+#nav .nav-area .left ul li a .bars {
+  margin-right: 10px;
+}
+#nav .nav-area .left ul li a:hover {
+  color: #fff;
+}
+#nav .nav-area .left:hover {
+  background-color: rgb(248, 191, 86);
+}
+#nav .nav-area .middle {
+  padding: 10px;
+}
+#nav .nav-area .middle a {
+  text-decoration: none;
+}
+#carousel .main {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+#carousel .main .banners {
+  position: relative;
+}
+#carousel .main .banners .banner {
+  position: relative;
+}
+#carousel .main .banners .banner .image {
+  height: 130px;
+  width: 450px;
+}
+#carousel .main .banners .banner .image img {
+  width: 100%;
+  height: 100%;
+}
+#carousel .main .banners .banner .text {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 130px;
+  height: 100px;
+}
+#carousel .main .banners .banner .text .product {
+  font-size: 15px;
+  color: #a8a6a6;
+}
+#carousel .main .banners .banner .text .desc {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  margin-top: -15px;
+}
+#carousel .main .banners .banner .text .price {
+  margin-top: -15px;
+  font-size: 15px;
+}
+#carousel .main .banners .banner .text .desc-1 {
+  margin-top: -15px;
+  font-size: 15px;
+}
+#carousel .main .banners .banner .text p:hover {
+  cursor: pointer;
+  color: rgb(248, 191, 86);
+}
+#carousel .main .banners .banner .shop-now {
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+  width: 200px;
+}
+#carousel .main .banners .banner .shop-now a {
+  text-decoration: none;
+  color: rgb(248, 191, 86);
+}
+#carousel .main .banners .banner .shop-now a:hover {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(248, 191, 86);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#carousel .main .owl-carousel {
+  width: 750px;
+  height: 400px;
+  position: relative;
+}
+#carousel .main .owl-carousel .left-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#carousel .main .owl-carousel .left-image .active-image {
+  opacity: 1 !important;
+}
+#carousel .main .owl-carousel i {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+  top: 200px;
+  transition: all 0.5s;
+}
+#carousel .main .owl-carousel i:hover {
+  color: rgb(248, 191, 86);
+}
+#carousel .main .owl-carousel .left {
+  left: 20px;
+}
+#carousel .main .owl-carousel .right {
+  right: 20px;
+}
+
+#tab-menu {
+  margin-top: 50px;
+}
+#tab-menu .headers {
+  position: relative;
+}
+#tab-menu .headers ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  list-style: none;
+}
+#tab-menu .headers ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 30px;
+  color: #bfbdbd;
+}
+#tab-menu .headers .active-menu {
+  color: black !important;
+  transition: all 0.5s;
+}
+#tab-menu .headers .item:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
 }/*# sourceMappingURL=home.css.map */
