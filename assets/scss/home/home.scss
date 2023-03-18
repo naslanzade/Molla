@@ -1,0 +1,254 @@
+#header-top {
+    background-color: #333;
+
+    .heading-up {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px #dbdbdb solid;
+
+        .left-side {
+
+            padding: 6px;
+
+            a {
+                text-decoration: none;
+                color: #ccc;
+                font-size: 13px;
+            }
+        }
+
+
+        .right-side {
+            display: flex;
+
+
+            .currency {
+                padding: 10px;
+
+                a {
+                    color: #ccc;
+                    font-size: 13px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+
+                ul {
+                    display: none;
+                    width: 40px;
+                    height: 50px;
+                    background-color: white;
+                    padding: 0;
+
+
+                    li {
+
+                        text-align: center;
+                        list-style: none;
+                        color: #ccc;
+                        font-size: 13px;
+
+                    }
+
+                }
+
+                a:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+                i:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+                li:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+            }
+
+
+            .language {
+                padding: 10px;
+
+                a {
+                    color: #ccc;
+                    font-size: 13px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+
+                ul {
+                    display: none;
+                    width: 50px;
+                    height: 70px;
+                    background-color: white;
+                    padding: 0;
+
+
+                    li {
+
+                        text-align: center;
+                        list-style: none;
+                        color: #ccc;
+                        font-size: 13px;
+
+                    }
+
+                }
+
+                a:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+                i:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+                li:hover {
+                    color: rgb(248, 191, 86);
+                }
+
+            }
+
+
+            .sign {
+                padding: 6px;
+
+                a {
+                    text-decoration: none;
+                    color: #ccc;
+                    font-size: 13px;
+                }
+
+
+                a:hover {
+                    color: rgb(248, 191, 86);
+                }
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+    .heading-down {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .search {
+            position: relative;
+            display: flex;
+            width: 40%;
+
+            input {
+                position: absolute;
+                width: 100%;
+                border-radius: 50px;
+                height: 50px;
+                outline: none;
+                padding-left: 45px;
+            }
+
+            i {
+                position: absolute;
+                color: black;
+                z-index: 1;
+                top: 18px;
+                left: 20px;
+                transform: rotate(90deg);
+
+            }
+
+
+            i:hover {
+                color: rgb(248, 191, 86);
+            }
+
+
+
+        }
+
+        .right-icon {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            width: 15%;
+
+            .random {
+                text-align: center;
+
+                i{
+                    font-size: 25px;
+                    cursor: pointer;
+
+                }
+                i:hover {
+                    color: rgb(248, 191, 86);
+                }
+                p{
+                    color: #ccc;
+                    font-size: 13px;
+                }
+
+                sup{
+                    
+                   
+                }
+            }
+
+
+            .favorite {
+                text-align: center;
+
+                i{
+                    font-size: 25px;
+                    cursor: pointer;
+
+                }
+                i:hover {
+                    color: rgb(248, 191, 86);
+                }
+                p{
+                    color: #ccc;
+                    font-size: 13px;
+                }
+            }
+
+
+            .cart {
+                text-align: center;
+
+                i{
+                    font-size: 25px;
+                    cursor: pointer;
+
+                }
+                i:hover {
+                    color: rgb(248, 191, 86);
+                }
+                p{
+                    color: #ccc;
+                    font-size: 13px;
+                }
+            }
+
+
+
+
+
+        }
+
+
+
+    }
+
+}
