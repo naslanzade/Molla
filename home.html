@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">    -->
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/scss/home/home.css">
     <title>Home</title>
@@ -30,9 +31,9 @@
                                     </ul>
                                 </div>
                                 <div class="language">
-                                    <a href="" class="dropdown-link-lang">English <i
+                                    <a href="" class="dropdown-link">English <i
                                             class="fa-solid fa-chevron-down"></i></a>
-                                    <ul class="dropdown-list-lang">
+                                    <ul class="dropdown-list">
                                         <li>English</li>
                                         <li>French</li>
                                         <li>Spanish</li>
@@ -43,17 +44,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="navigation d-none">
-                            <ul>
-                                <li><a href="#">Links</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Usd</a></li>
-                                        <li><a href="#">English</a></li>
-                                        <li><a href="#">Sign in/ Sign up</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
 
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -93,111 +84,137 @@
                 </div>
             </div>
         </section>
-
-
         <section id="nav">
             <div class="container">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="nav-area">
-                        <div class="left">
-                            <ul class="categories">
-                                <li><a href="#"> <i class="fa-solid fa-bars bars"></i><i
-                                            class="fa-solid fa-xmark x d-none"></i> Browse Categories <i
-                                            class="fa-solid fa-chevron-down chevron"></i></a></li>
-                                <ul class="dropdown d-none">
-                                    <li><a href="#">Electronics</a></li>
-                                    <li><a href="#">Gift Ideas</a></li>
-                                    <li><a href="#">Beds</a></li>
-                                    <li><a href="#">Lighting</a></li>
-                                    <li><a href="#">Sofas & Sleeper sofas</a></li>
-                                    <li><a href="#">Storage</a></li>
-                                    <li><a href="#">Armchairs & Chaises</a></li>
-                                    <li><a href="#">Decoration</a></li>
-                                    <li><a href="#">Kitchen Cabinets</a></li>
-                                    <li><a href="#">Coffee & Tables</a></li>
-                                    <li><a href="#">Outdoor Furniture</a></li>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="navarea">
+                            <div class="left-side">
+                                <i class="fa-solid fa-x"></i>
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Browse Categories</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="left-dropdown">
+                                    <ul>
+                                        <li>Electronics</li>
+                                        <li>Gift Ideas</li>
+                                        <li>Beds</li>
+                                        <li>Lighting</li>
+                                        <li>Sofas & Sleeper sofas</li>
+                                        <li>Storage</li>
+                                        <li>Armchairs & Chaises</li>
+                                        <li>Decoration</li>
+                                        <li>Kitchen Cabinets</li>
+                                        <li>Coffee and Tables</li>
+                                        <li>Outdoor & Tables</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <ul>
+                                    <li>Home</li>
+                                    <li>Shop</li>
+                                    <li>Product</li>
+                                    <li class="pages">Pages <i class="fa-solid fa-chevron-down"></i>
+                                        <div class="drop">
+                                            <ul class="dropdown-list">
+                                                <li>About</li>
+                                                <li>Account</li>
+                                                <li>Cart</li>
+                                                <li>Wishlist</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Blog</li>
+                                    <li>Contact</li>
                                 </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="middle">
-                            <a href="" class="home">Home <i class="fa-solid fa-chevron-down"></i></a>
-                            <a href="">Shop <i class="fa-solid fa-chevron-down"></i></a>
-                            <a href="">About <i class="fa-solid fa-chevron-down"></i></a>
-                            <a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
-                            <a href="">Blog <i class="fa-solid fa-chevron-down"></i></a>
-                            <a href="">Elements <i class="fa-solid fa-chevron-down"></i></a>
-                        </div>
-                        <div class="right">
-                            <i class="fa-regular fa-lightbulb"></i>
-                            <span>Clearance Up to 30% Off</span>
+                            </div>
+                            <div class="right-side">
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <span>Clearance Up to 30% Off</span>
+                            </div>
 
                         </div>
+
+
                     </div>
-
                 </div>
             </div>
+
         </section>
     </header>
 
-
     <main>
-        <section id="carousel">
-            <div class="container mt-4">
+        <section id="slider-edit">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="main">
-                            <div class="owl-carousel">
-                                <i class="fa-solid fa-chevron-left left"></i>
-                                <i class="fa-solid fa-chevron-right right"></i>
-                                <div class="left-image">
-                                    <img src="./assets/images/main/slide-1.jpg" data-id="1" class="active-image" alt="">
-                                    <img src="./assets/images/main/slide-2.jpg" data-id="2" alt="">
-                                </div>
-                            </div>
-                            <div class="banners">
-                                <div class="banner">
-                                    <div class="image">
-                                        <img src="./assets/images/main/banner-1.jpg" alt="">
-                                        <div class="text">
-                                            <p class="product">Top Product</p>
-                                            <p class="desc">Edifier Stereo Bluetooth</p>
-                                        </div>
-                                        <div class="shop-now">
-                                            <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <div class="slides">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <div class="slide">
+                                <div class="image">
+                                    <img src="./assets/images/main/slide-1.jpg" alt="">
+                                    <div class="text">
+                                        <p>Daily Deals</p>
+                                        <p>AirPods Earphones</p>
+                                        <p>Today:</p>
+                                        <p>$247</p>
+                                        <p>.99</p>
+                                        <button>Click here <i class="fa-solid fa-arrow-right"></i></button>
                                     </div>
                                 </div>
-                                <div class="banner mt-2">
-                                    <div class="image">
-                                        <img src="./assets/images/main/banner-2.jpg" alt="">
-                                        <div class="text">
-                                            <p class="product">Clearance</p>
-                                            <p class="desc">GoPro-Fusion 360</p>
-                                            <p class="price">Save $70</p>
-                                        </div>
-                                        <div class="shop-now">
-                                            <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="banner mt-2">
-                                    <div class="image">
-                                        <img src="./assets/images/main/banner-3.jpg" alt="">
-                                        <div class="text">
-                                            <p class="product">Featured</p>
-                                            <p class="desc">Apple Watch 4</p>
-                                            <p class="desc-1">Our Hottest Deals</p>
-                                        </div>
-                                        <div class="shop-now">
-                                            <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
+                                <div class="image">
+                                    <img src="./assets/images/main/slide-2.jpg" alt="">
+                                    <div class="text-1">
+                                        <p>Deals and promotions</p>
+                                        <p>Echo Dot 3rd Gen</p>
+                                        <p>$49.99</p>
+                                        <p>$29</p>
+                                        <p>.99</p>
+                                        <button>Click here <i class="fa-solid fa-arrow-right"></i></button>
                                     </div>
                                 </div>
                             </div>
-
+                            <i class="fa-solid fa-chevron-right"></i>
                         </div>
+                    </div>
+
+
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <div class="cart">
+                            <div class="image">
+                                <img src="./assets/images/main/banner-1.jpg" alt="">
+                                <div class="description">
+                                    <p>Top Product</p>
+                                    <p>Edifier Stereo Bluetooth</p>
+                                    <a href="">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart mt-2">
+                            <div class="image">
+                                <img src="./assets/images/main/banner-2.jpg" alt="">
+                                <div class="description">
+                                    <p>Clearance</p>
+                                    <p>GoPro - Fusion 360</p> <br>
+                                    <p>Save $70</p>
+                                    <a href="">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart mt-2">
+                            <div class="image">
+                                <img src="./assets/images/main/banner-3.jpg" alt="">
+                                <div class="description">
+                                    <p>Featured</p>
+                                    <p>Apple Watch 4</p> <br>
+                                    <p>Our Hottest Deals</p>
+                                    <a href="">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -206,58 +223,518 @@
         <section id="tab-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="headers">
-                            <ul>
-                                <li data-id="1" class="item active-menu">Featured</li>
-                                <li data-id="1" class="item">On sale</li>
-                                <li data-id="1" class="item">Top Rated</li>
-                            </ul>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="tab">
+                            <div class="menues-edit">
+                                <ul>
+                                    <li data-id="1" class="active-tab item">Feautred</li>
+                                    <li data-id="2" class="item">On Sale</li>
+                                    <li data-id="3" class="item">Top Rated</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-12 col-md-12 col-lg-3">
-                    <div class="contents">
-                        <div class="cart">
-                            <div class="product">
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card">
+                            <div class="image" data-id="1">
                                 <img src="./assets/images/main/product_1.jpg" alt="">
                                 <div class="sale">
                                     <p>Sale</p>
+                                    <p>Top</p>
                                 </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Smartwatches</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Apple - Watch Series 3 with White sport Band</p>
+                                </div>
+                                <div class="price">
+                                    <span>$214.99-$217.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image" data-id="1">
+                                <img src="./assets/images/main/product_5.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Video Games, Entertain...</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Microsoft - Refurbish Xbox One S 500GB</p>
+                                </div>
+                                <div class="price">
+                                    <span>$217.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image" data-id="1">
+                                <img src="./assets/images/main/product_3.jpg" alt="">
                                 <div class="top">
                                     <p>Top</p>
                                 </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Camocorders</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Sony - Alpha a5100 Mirrorless Camera</p>
+                                </div>
+                                <div class="price">
+                                    <span>$499.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
                             </div>
-                            <div class="product-desc">
-                                <p>Accessories,Smartwatches</p>
-                            </div>
-                            <div class="product-desc-2">
-                                <p>Apple – Watch Series 3 with White Sport Band</p>
-                            </div>
-                            <div class="product-price">
-                                <p>$<span>217.99</span></p>
-                            </div>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <p>(2 Reviews)</p>
-                            </div>
+
                         </div>
                     </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image" data-id="1">
+                                <img src="./assets/images/main/product_4.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Camocorders</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Canon - EOS 5D Mark IV DSRL Camera</p>
+                                </div>
+                                <div class="price">
+                                    <span>$359.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card">
+                            <div class="image d-none" data-id="2">
+                                <img src="./assets/images/main/product_1.jpg" alt="">
+                                <div class="sale">
+                                    <p>Sale</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Smartwatches</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Apple - Watch Series 3 with White sport Band</p>
+                                </div>
+                                <div class="price">
+                                    <span>$214.99-$217.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="2">
+                                <img src="./assets/images/main/product_3.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p style="background-color:  #ef837b;">Sale</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Camcorders, Cameras</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>GoPro - HERO 7 Black HD Waterproof Action</p>
+                                </div>
+                                <div class="price">
+                                    <span>$130</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="2">
+                                <img src="./assets/images/main/product_4.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Cameras, Camocorders</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Canon - EOS 5D Mark IV DSLR Camera</p>
+                                </div>
+                                <div class="price">
+                                    <span>$359.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="2">
+                                <img src="./assets/images/main/product_5.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p style="background-color: #ef837b;">Sale</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Audio</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Home Smart Speaker with Google</p>
+                                </div>
+                                <div class="price">
+                                    <span>$129.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card">
+                            <div class="image d-none" data-id="3">
+                                <img src="./assets/images/main/product_6.jpg" alt="">
+
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Computers, Tablets, Cell Phone TV</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Apple - 11 iPad Pro with Wi-Fi 25GB</p>
+                                </div>
+                                <div class="price">
+                                    <span>$899.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="3">
+                                <img src="./assets/images/main/product_7.jpg" alt="">
+
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Computers, Tablets</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Aplle - Smart Folio for 11-inch iPad Pro</p>
+                                </div>
+                                <div class="price">
+                                    <span>$160.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="3">
+                                <img src="./assets/images/main/product_1.jpg" alt="">
+                                <div class="sale">
+                                    <p>Sale</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Cameras, Camocorders</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>Canon - EOS 5D Mark IV DSLR Camera</p>
+                                </div>
+                                <div class="price">
+                                    <span>$359.99</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="class-sm-12 col-md-12 col-lg-3">
+                        <div class="card mt-2">
+                            <div class="image d-none" data-id="3">
+                                <img src="./assets/images/main/product_3.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p style="background-color:  #ef837b;">Sale</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <i class="fa-solid fa-glasses"></i>
+                                </div>
+                                <div class="names">
+                                    <p>Accessories, Camcorders, Cameras</p>
+                                </div>
+
+                                <div class="description">
+                                    <p>GoPro - HERO 7 Black HD Waterproof Action</p>
+                                </div>
+                                <div class="price">
+                                    <span>$130</span>
+                                </div>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
 
 
 
                 </div>
             </div>
+        </section>
+
+        <section id="background-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="img">
+                            <img src="./assets/images/main/bg-1.jpg" alt="">
+                            <div class="back-image">
+                                <div class="heading">
+                                    <h3 class="text-right">
+                                        <span class="text">New Deals</span>
+                                        <br>
+                                        "Start Daily at 12pm e.t."
+                                    </h3>
+                                </div>
+                                <div class="center-text">
+                                    <p>Get
+                                        <span>FREE SHIPPING* & 5% rewards</span>
+                                        <br>
+                                        every order with Molla Theme rewards program
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <a class="btn btn-primary btn-round" href="">
+                                        <span>Add to Cart for $50.00/yr</span>
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+
 
         </section>
 
+        
+
 
     </main>
+
+    
+
+
+
 
 
 
@@ -284,7 +761,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js">
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/f53cdaa4b1.js" crossorigin="anonymous"></script>
     <script src="./assets/js/home/home.js"></script>
 </body>

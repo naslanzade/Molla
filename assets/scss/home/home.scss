@@ -1,6 +1,20 @@
-@import url(../../../assets/scss/partials/_variables.scss);
+@import './../partials/variables';
+
+
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../fonts/Poppins-Bold.ttf);
+    font-family: mySecondFont;
+    src: url(../../fonts/Poppins-Italic.ttf);
+    font-family: myThirdFont;
+    src: url(../../fonts/Poppins-Light.ttf);
+
+}
 
 #header-top {
+
     background-color: #333;
 
     .heading-up {
@@ -27,6 +41,12 @@
 
             .currency {
                 padding: 10px;
+                position: relative;
+
+                .dropdown-list {
+                    display: none;
+                    position: absolute;
+                }
 
                 a {
                     color: $text-color;
@@ -35,9 +55,7 @@
                     display: block;
                 }
 
-
                 ul {
-                    display: none;
                     width: 40px;
                     height: 50px;
                     background-color: white;
@@ -66,18 +84,30 @@
             }
 
 
+            .currency:hover .dropdown-list {
+                display: block !important;
+
+            }
+
             .language {
                 padding: 10px;
+                position: relative;
+
+                .dropdown-list {
+                    display: none;
+                    position: absolute;
+                }
 
                 a {
                     color: $text-color;
                     font-size: 13px;
                     text-decoration: none;
                     display: block;
+
                 }
 
                 ul {
-                    display: none;
+
                     width: 50px;
                     height: 70px;
                     background-color: white;
@@ -105,6 +135,12 @@
                     color: $hover-color;
                 }
             }
+
+            .language:hover .dropdown-list {
+                display: block !important;
+
+            }
+
 
 
             .sign {
@@ -288,268 +324,1429 @@
             right: 7px;
         }
     }
-
-
 }
+
 
 #nav {
-    border-bottom: 1px black solid;
+    border: 1px solid #333;
 
-    .nav-area {
+    .navarea {
         display: flex;
-        justify-content: space-between;
+        padding: 0%;
+        height: 50px;
+
+        .left-side {
+            margin-left: 11px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 60px;
+            transition: all 0.5s;
+            padding-left: 15px;
+            padding-right: 15px;
+            cursor: pointer;
+            width: 300px;
+            height: 100%;
+            font-family: myThirdFont;
+            z-index: 5;
+
+            .fa-chevron-down {
+                position: absolute;
+                right: 15px;
+            }
+
+            .fa-bars {
+                margin-right: 20px;
+                font-size: 20px;
+
+            }
+
+            .fa-x {
+                margin-right: 20px;
+                font-size: 20px;
+                display: none;
+                color: white;
+
+            }
+
+            span {
+                font-weight: 600;
+                opacity: 0.8;
+                font-size: 15px;
+
+            }
+
+            &:hover {
+                background-color: $hover-color;
+            }
+
+            &:hover>.fa-bars {
+                display: none;
+            }
+
+            &:hover>.fa-x {
+                display: block;
+            }
+
+            &:hover>.fa-chevron-down {
+                color: white;
+            }
+
+            &:hover>span {
+                color: white;
+            }
 
 
-        .left {
-            padding: 10px;
+            &:hover>.left-dropdown {
+                display: block;
+                position: absolute;
+                width: 200px;
+                left: 0;
+                top: 50px;
+                height: 270px;
+            }
 
-            ul {
+
+            .left-dropdown {
+                display: none;
+
+                ul {
+                    width: 300px;
+                    padding: 0%;
+
+                    li {
+                        padding: 3px;
+                        width: 100%;
+                        height: 30px;
+                        list-style: none;
+                        font-family: mySecondFont;
+                        font-size: 13px;
+                        border-top: 0.1rem solid #ebebeb;
+                        border-left: 0.1rem solid #ebebeb;
+                        border-right: 0.1rem solid #ebebeb;
+                        border-bottom: 0.1rem solid #ebebeb;
+                        background-color: white;
+                    }
+
+                    li:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+
+        }
+
+        .center {
+
+            ul:not(.dropdown-list) {
+                display: flex;
+                justify-content: space-between;
                 list-style: none;
-                position: relative;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+                margin-top: 10px;
+                font-family: myThirdFont;
+
 
                 li {
-                    position: relative;
-                    width: 230px;
-                    text-align: center;
-
-                    a {
-                        text-decoration: none;
-                        color: #333;
-                        font-weight: 500;
-
-                        .chevron {
-                            margin-left: 50px;
-                            font-size: 8px;
-                        }
-
-                        .bars {
-                            margin-right: 10px;
-                        }
-                    }
-
-                    a:hover {
-                        color: #fff;
-                    }
+                    padding-left: 30px;
 
 
                 }
 
+                .pages {
 
+                    position: relative;
+                    z-index: 5;
+
+                    .drop {
+                        .dropdown-list {
+                            display: none;
+                            position: absolute;
+                            list-style: none;
+                            padding: 0%;
+                            color: #333;
+                        }
+                    }
+
+                }
+
+                .pages:hover .dropdown-list {
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    background-color: white;
+                }
+
+                .pages:hover .dropdown-list li {
+                    padding-left: 20px;
+                }
+
+
+                li:hover {
+                    color: $hover-color;
+                }
             }
         }
 
-        .left:hover {
-            background-color: $hover-color;
-        }
-
-
-        .middle {
-            padding: 10px;
-
-            a {
-                text-decoration: none;
-
-                .home {}
-            }
+        .right-side {
+            margin-top: 10px;
+            padding-left: 150px;
+            font-family: myThirdFont;
         }
     }
 
 
 }
 
-#slider {
-    .main {
-        display: flex;
-        justify-content: space-around;
-        position: relative;
 
-        .banners {
+#slider-edit {
+
+    .slides {
+        position: relative;
+        top: 20px;
+
+        .fa-chevron-left {
+            left: 20px;
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 20px;
+            color: black;
+            top: 170px;
+            transition: all 0.5s;
+        }
+
+        .fa-chevron-right {
+            left: 700px;
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 20px;
+            color: black;
+            top: 170px;
+            transition: all 0.5s;
+        }
+
+
+        .fa-chevron-right:hover {
+            color: $hover-color;
+        }
+
+        .fa-chevron-left:hover {
+            color: $hover-color;
+        }
+
+        .slide {
             position: relative;
 
-            .banner {
+
+            .image {
                 position: relative;
 
-                .image {
-                    height: 130px;
-                    width: 450px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
 
                 .text {
-                    position: absolute;
-                    bottom: 20px;
-                    left: 10px;
-                    width: 130px;
-                    height: 100px;
+                    position: relative;
+                    left: 70px;
+                    line-height: 38px;
 
 
-                    .product {
-                        font-size: 15px;
-                        color: #a8a6a6;
+
+                    p:nth-child(1) {
+                        position: absolute;
+                        bottom: 300px;
+                        font-family: mySecondFont;
+                        color: $hover-color;
+                        font-size: 23px;
+                        font-weight: 300;
+                    }
+
+                    p:nth-child(2) {
+                        position: absolute;
+                        bottom: 220px;
+                        font-family: mySecondFont;
+                        font-weight: 900;
+                        font-size: 40px;
+                        width: 300px;
                     }
 
 
-                    .desc {
-                        font-size: 16px;
+                    p:nth-child(3) {
+                        position: absolute;
+                        bottom: 170px;
+                        font-family: myFirstFont;
+                        font-size: 27px;
                         font-weight: 400;
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        color: black;
-                        margin-top: -15px;
                     }
 
-                    .price {
-                        margin-top: -15px;
-                        font-size: 15px;
-                    }
-
-                    .desc-1 {
-                        margin-top: -15px;
-                        font-size: 15px;
-                    }
-
-                    p:hover {
-                        cursor: pointer;
-                        color: $hover-color;
-                    }
-                }
-
-                .shop-now {
-                    position: absolute;
-                    bottom: 13px;
-                    left: 10px;
-                    width: 200px;
-
-                    a {
-                        text-decoration: none;
+                    p:nth-child(4) {
+                        position: absolute;
+                        bottom: 150px;
+                        left: 80px;
+                        font-family: myFirstFont;
+                        font-size: 70px;
+                        font-weight: 900;
                         color: $hover-color;
                     }
 
-                    a:hover {
-                        border-top-right-radius: 10px;
-                        border-top-left-radius: 10px;
-                        border-bottom-right-radius: 10px;
-                        border-bottom-left-radius: 10px;
+                    p:nth-child(5) {
+                        position: absolute;
+                        bottom: 170px;
+                        left: 225px;
+                        font-family: myFirstFont;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $hover-color;
+                    }
+
+                    button {
+                        border: none;
+                        position: absolute;
+                        bottom: 80px;
                         background-color: $hover-color;
                         color: white;
-                        width: 100%;
-                        text-align: center;
+                        width: 200px;
+                        border-radius: 50px;
+                    }
+                }
+
+
+
+                .text-1 {
+
+                    position: relative;
+                    left: 70px;
+                    line-height: 38px;
+
+
+
+                    p:nth-child(1) {
+                        position: absolute;
+                        bottom: 300px;
+                        font-family: mySecondFont;
+                        color: $hover-color;
+                        font-size: 23px;
+                        font-weight: 300;
+                    }
+
+                    p:nth-child(2) {
+                        position: absolute;
+                        bottom: 220px;
+                        font-family: mySecondFont;
+                        font-weight: 900;
+                        font-size: 40px;
+                        width: 200px;
+                    }
+
+
+                    p:nth-child(3) {
+                        position: absolute;
+                        bottom: 170px;
+                        font-family: myFirstFont;
+                        font-size: 27px;
+                        font-weight: 400;
+                    }
+
+                    p:nth-child(4) {
+                        position: absolute;
+                        bottom: 150px;
+                        left: 80px;
+                        font-family: myFirstFont;
+                        font-size: 70px;
+                        font-weight: 900;
+                        color: $hover-color;
+                    }
+
+                    p:nth-child(5) {
+                        position: absolute;
+                        bottom: 170px;
+                        left: 190px;
+                        font-family: myFirstFont;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $hover-color;
+                    }
+
+                    button {
+                        border: none;
+                        position: absolute;
+                        bottom: 80px;
+                        background-color: $hover-color;
+                        color: white;
+                        width: 200px;
+                        border-radius: 50px;
                     }
 
                 }
 
 
+                button:hover {
+                    background-color: rgb(111, 73, 2);
+                }
             }
         }
+    }
 
-        .slide-main {
-            width: 750px;
-            height: 400px;
-            position: relative;
 
-            .left-image {
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    transition: all 0.5s;
-                }
+    .cart {
+        position: relative;
+        top: 20px;
 
-                .active-image {
-                    opacity: 1 !important;
-                }
+        .image {
+            width: 510px;
+            height: 128px;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
 
-            i {
+
+            .description {
                 position: absolute;
-                z-index: 1;
-                cursor: pointer;
-                font-size: 12px;
-                color: #666;
-                top: 200px;
-                transition: all 0.5s;
+                top: 30px;
+                left: 15px;
+                line-height: 5px;
+
+
+                p:nth-child(1) {
+                    font-size: 13px;
+                    font-family: myThirdFont;
+                }
+
+                p:nth-child(2) {
+                    font-size: 19px;
+                    font-family: myFirstFont;
+                    font-weight: 900;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $hover-color;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+
+                a:hover {
+
+                    color: white;
+                    background-color: $hover-color;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+
+
+
             }
 
-            i:hover {
-                color: $hover-color;
-            }
-
-            .left {
-                left: 20px;
-            }
-
-            .right {
-                right: 20px;
-            }
         }
 
+    }
+
+}
 
 
+@media screen and (max-width:992px) {
+    #slider-edit .slides .image {
+        width: 90vw;
 
+        img {
+            width: 100%;
+        }
 
     }
 
 
+    #slider-edit .slides .fa-chevron-right {
+
+        left: 430px;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 20px;
+        color: black;
+        top: 100px;
+        transition: all 0.5s;
+    }
+
+
+    #slider-edit .slides .fa-chevron-left {
+
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 20px;
+        color: black;
+        top: 100px;
+        transition: all 0.5s;
+    }
+
+
+    #slider-edit .cart {
+        position: relative;
+        top: 50px;
+
+
+        .image {
+            width: 92vw;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:992px) {
+    #slider-edit .slides .slide {
+        position: relative;
+
+        .image {
+            position: relative;
+
+            .text {
+                position: relative;
+                left: 70px;
+                line-height: 30px;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    bottom: 160px;
+                    font-family: mySecondFont;
+                    color: $hover-color;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    bottom: 90px;
+                    font-family: mySecondFont;
+                    font-weight: 900;
+                    font-size: 25px;
+                    width: 200px;
+                }
+
+
+                p:nth-child(3) {
+                    position: absolute;
+                    bottom: 50px;
+                    font-family: myFirstFont;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                p:nth-child(4) {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 60px;
+                    font-family: myFirstFont;
+                    font-size: 40px;
+                    font-weight: 900;
+                    color: $hover-color;
+                }
+
+                p:nth-child(5) {
+                    position: absolute;
+                    bottom: 50px;
+                    left: 140px;
+                    font-family: myFirstFont;
+                    font-size: 15px;
+                    font-weight: 900;
+                    color: $hover-color;
+                }
+
+                button {
+                    border: none;
+                    position: absolute;
+                    bottom: 10px;
+                    background-color: $hover-color;
+                    color: white;
+                    width: 100px;
+                    border-radius: 50px;
+                }
+            }
+
+            .text-1 {
+                position: relative;
+                left: 70px;
+                line-height: 30px;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    bottom: 160px;
+                    font-family: mySecondFont;
+                    color: $hover-color;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    bottom: 100px;
+                    font-family: mySecondFont;
+                    font-weight: 900;
+                    font-size: 25px;
+                    width: 100px;
+                }
+
+
+                p:nth-child(3) {
+                    position: absolute;
+                    bottom: 50px;
+                    font-family: myFirstFont;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                p:nth-child(4) {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 60px;
+                    font-family: myFirstFont;
+                    font-size: 40px;
+                    font-weight: 900;
+                    color: $hover-color;
+                }
+
+                p:nth-child(5) {
+                    position: absolute;
+                    bottom: 50px;
+                    left: 120px;
+                    font-family: myFirstFont;
+                    font-size: 15px;
+                    font-weight: 900;
+                    color: $hover-color;
+                }
+
+                button {
+                    border: none;
+                    position: absolute;
+                    bottom: 10px;
+                    background-color: $hover-color;
+                    color: white;
+                    width: 100px;
+                    border-radius: 50px;
+                }
+            }
+
+            button:hover {
+
+                background-color: rgb(111, 73, 2);
+
+            }
+        }
+    }
 
 
 
+}
 
+@keyframes content {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 50px);
+        transform-origin: 0px 0px;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.content-animation {
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-delay: 100ms;
+    animation-name: content;
+    animation-duration: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
 }
 
 
 #tab-menu {
-    margin-top: 50px;
 
-    .headers {
+    margin-top: 70px;
 
+    .tab {
         position: relative;
+
+    }
+
+    .menues-edit {
 
         ul {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center !important;
             list-style: none;
-
+            font-family: myThirdFont;
+            width: 100%;
+            text-align: center;
 
             li {
-                position: relative;
-                padding-left: 20px;
                 font-size: 30px;
-                color: #bfbdbd;
+                color: $text-color;
+                font-weight: 700;
+                padding-left: 10px;
+            }
+
+            li:hover {
+                color: $hover-color;
+                cursor: pointer;
 
             }
 
-        }
+            .active-tab {
+                border-bottom: 2px black solid;
+                color: black;
 
-        .active-menu {
-            color: black !important;
-            transition: all 0.5s;
-        }
-
-        .item:hover {
-            color: $hover-color;
-            cursor: pointer;
+            }
         }
     }
 
-    .contents {
-        .cart {
-            .product {
-                position: relative;
+
+    .card {
+
+        border: none;
+
+        .image {
+            width: 100%;
+            height: 530px;
+            position: relative;
+            transition: all 0.5s;
+
+            img {
+                width: 100%;
             }
 
             .sale {
                 position: absolute;
-                bottom: 20px;
+                left: 20px;
+                text-align: center;
+                align-items: center;
 
-                p {
-                    color: red;
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ef837b;
+                    text-align: center;
+                    color: white;
+                    bottom: 200px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+            .new {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(166, 199, 108);
+                    text-align: center;
+                    color: white;
+                    bottom: 200px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+            .top {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 200px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+
+
+            }
+
+            .wishlist {
+                position: absolute;
+                display: none;
+
+                .fa-heart {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgb(218, 142, 0);
+                    color: #333;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    padding: 5px;
+                    bottom: 250px;
+                    left: 270px;
+                }
+
+                i:hover {
+                    cursor: pointer;
                 }
             }
+
+            .icons {
+                position: absolute;
+                width: 100%;
+                background-color: #333;
+                height: 50px;
+
+
+                display: none;
+
+                .fa-list-check {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+
+                }
+
+                .fa-glasses {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 175px;
+                }
+
+                .fa-cart-plus {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+
+            .names {
+                position: absolute;
+                top: 365px;
+                left: 10px;
+                line-height: 17px;
+
+                p {
+                    color: #bcbaba;
+                    font-weight: 300;
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .description {
+                position: absolute;
+                top: 400px;
+                left: 10px;
+                line-height: 20px;
+
+                p {
+                    color: black;
+                    font-weight: 500;
+                    width: 270px;
+                    font-size: 17px;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .price {
+                position: absolute;
+                top: 447px;
+                left: 10px;
+                line-height: 17px;
+
+                span {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: myThirdFont;
+                }
+
+
+
+            }
+
+
+            .rates {
+                display: flex;
+                position: absolute;
+                top: 490px;
+                left: 10px;
+                line-height: 17px;
+
+
+                .star {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                .star-1 {
+                    color: #bcbaba;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                p {
+                    margin-left: 10px;
+                    color: #bcbaba;
+                    font-family: myThirdFont;
+                }
+            }
+
+
+
+        }
+
+        .image:hover .wishlist {
+            display: block;
+        }
+
+        .image:hover .icons {
+            display: block;
+        }
+
+
+    }
+
+    .card:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    #tab-menu .card {
+        width: 92vw;
+
+        .image {
+
+            width: 100%;
+            position: relative;
+            transition: all 0.5s;
+
+
+            .img {
+                width: 400px;
+                height: 200px;
+
+            }
+
+            .sale {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ef837b;
+                    text-align: center;
+                    color: white;
+                    bottom: 350px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 320px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+
+            .new {
+
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(166, 199, 108);
+                    text-align: center;
+                    color: white;
+                    bottom: 350px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 320px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+            .top {
+
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 350px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+
+
+            }
+
+            .wishlist {
+                position: absolute;
+                display: none;
+
+                .fa-heart {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgb(218, 142, 0);
+                    color: #333;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    padding: 5px;
+                    bottom: 380px;
+                    left: 400px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .icons {
+                position: absolute;
+                width: 100%;
+                background-color: #333;
+                height: 50px;
+                bottom: 150px;
+
+
+                display: none;
+
+                .fa-list-check {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 150px;
+                }
+
+                .fa-glasses {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 250px;
+                }
+
+                .fa-cart-plus {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 150px;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+            .names {
+                position: absolute;
+                top: 390px;
+                left: 10px;
+                line-height: 17px;
+
+                p {
+                    color: #bcbaba;
+                    font-weight: 300;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .description {
+                position: absolute;
+                top: 410px;
+                left: 10px;
+                line-height: 20px;
+
+                p {
+                    color: black;
+                    font-weight: 400;
+                    width: 270px;
+                    font-size: 15px;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .price {
+                position: absolute;
+                top: 450px;
+                left: 10px;
+                line-height: 17px;
+
+                span {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-family: myThirdFont;
+                }
+
+            }
+
+            .rates {
+                display: flex;
+                position: absolute;
+                top: 490px;
+                left: 10px;
+                line-height: 17px;
+
+
+                .star {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                .star-1 {
+                    color: #bcbaba;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-left: 10px;
+                    color: #bcbaba;
+                    font-family: myThirdFont;
+                }
+            }
+
+
+
+
+        }
+    }
+
+}
+
+
+#background-image {
+
+    margin-top: 70px;
+
+    .img {
+        position: relative;
+
+        img {
+
+            width: 100%;
+        }
+
+        .back-image {
+            left: 15px;
+            position: relative;
+            width: 98%;
+            height: 147px;
+            bottom: 157px;
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: center !important;
+            justify-content: space-between;
+
+            .heading {
+
+                width: 30%;
+                height: 50%;
+                line-height: 1.2;
+
+                .text-right {
+                    font-weight: 600;
+                    letter-spacing: -.01em;
+                    font-size: 17px;
+                    line-height: 1.2;
+                    padding: 10px;
+                    padding-left: 160px;
+
+                    span {
+                        letter-spacing: -.01em;
+                        padding-left: 97px;
+                        color: $hover-color;
+                    }
+                }
+
+
+            }
+
+            .center-text {
+
+                width: 30%;
+                height: 50%;
+                line-height: 1.2;
+                padding: 10px;
+
+                p {
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    color: #bcbaba;
+
+                    span {
+                        color: #333 !important;
+                        font-weight: 400 !important;
+                    }
+
+                }
+            }
+
+            .button {
+
+                width: 30%;
+                height: 50%;
+                padding: 10px;
+                padding-left: 70px;
+
+                a {
+                    background-color: $hover-color;
+                    border: none;
+                    border-radius: 20px;
+                }
+
+                a:hover {
+                    background-color: rgb(111, 73, 2);
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+    #background-image .img {
+        img {
+            width: 95%;
+            height: 300px;
+            
+        }
+
+
+    }
+
+
+    #background-image .img{
+
+        .back-image {
+            left: 13px;
+            position: relative;
+            width: 90%;
+            height: 280px;
+            bottom: 290px;
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: center !important;
+            justify-content: space-between;
+           
+
+            .heading {
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                line-height: 1.2;
+                top: 20px;
+                padding-left: 100px;
+
+                .text-right {
+                    font-weight: 600;
+                    letter-spacing: -.01em;
+                    font-size: 17px;
+                    line-height: 1.2;
+                    padding: 10px;
+                    padding-left: 0px;
+
+                    span {
+                        letter-spacing: -.01em;
+                        padding-left: 50px;
+                        color: $hover-color;
+                    }
+                }
+
+
+            }
+
+            .center-text {
+                position: absolute;
+                width: 100%;
+                height: 30%;
+                line-height: 1.2;
+                top: 90px;
+                
+              
+
+                p {
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    color: #bcbaba;
+                    margin-left: 50px;
+                    
+
+                    span {
+                        color: #333 !important;
+                        font-weight: 400 !important;
+                        
+                    }
+
+                }
+            }
+
+            .button {  
+                position: absolute;             
+                height: 20%;
+                width: 90%;
+                bottom: 50px;                
+                top: 180px;
+                text-align: center;
+
+                a {
+                    margin-right: 50px;
+                    background-color: $hover-color;
+                    border: none;
+                    border-radius: 20px;
+                }
+
+                a:hover {
+                    background-color: rgb(111, 73, 2);
+                }
+
+
+            }
+
         }
     }
 }

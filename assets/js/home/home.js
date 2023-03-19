@@ -1,54 +1,68 @@
 $(document).ready(function () {
-    let leftIcon = document.querySelector(".owl-carousel .left");
-    let rightIcon = document.querySelector(".owl-carousel .right");
-    function rightSlider() {
-        let activeImage = document.querySelector(".active-image");
-        activeImage.classList.remove("active-image");
-        if (activeImage.nextElementSibling != null) {
-            activeImage.nextElementSibling.classList.add("active-image");
-        } else {
-            activeImage.parentNode.firstElementChild.classList.add("active-image");
+    $('.slide').slick({
+        'setting-name': 'setting - value',
+        'infinite':false,
+        'nextArrow':'.fa-chevron-right',
+        'prevArrow':'.fa-chevron-left'
+});
+
+
+function textAnimation(){
+    let slides=document.querySelectorAll(".slick-slide")
+
+    for(const slide of slides){
+        if(slide.classList.contains("slick-active")){
+            slide.lastElementChild.classList.add("content-animation")
         }
+        else{
+            slide.lastElementChild.classList.remove("content-animation")
 
-    }
-
-    function leftSlider() {
-        let activeImage = document.querySelector(".active-image");
-        activeImage.classList.remove("active-image");
-        if (activeImage.previousElementSibling != null) {
-            activeImage.previousElementSibling.classList.add("active-image");
-        } else {
-            activeImage.parentNode.lastElementChild.classList.add("active-image");
         }
     }
-    leftIcon.addEventListener("click", leftSlider);
-    rightIcon.addEventListener("click", rightSlider);
+}
+
+textAnimation()
 
 
-    
-  
-    $(".headers .item").click(function () {
+let leftIcon=document.querySelector(".fa-chevron-left")
+let rightIcon=document.querySelector(".fa-chevron-right")
 
-        $(".active-menu").removeClass("active-menu")
-        $(this).addClass("active-menu")
+leftIcon.addEventListener("click",textAnimation)
+rightIcon.addEventListener("click",textAnimation)
+
+let slides=document.querySelectorAll(".slick-slide")
+
+for(const slide of slides){
+    slide.addEventListener("mouseleave",textAnimation)
+}
 
 
-        let elements= $(".contents .item")
-        for (const content of $(elements)) {
-            if ($(this).attr("data-id") == $(content).attr("data-id")) {
-                $(content).removeClass("d-none")
-            } 
-            else 
-            {
-                $(content).addClass("d-none")
-            }
+$(".menues-edit .item").click(function () {
+
+    $(".active-tab").removeClass("active-tab")
+    $(this).addClass("active-tab")
+
+
+    let elements= $(".card .image")
+    for (const content of $(elements)) {
+        if ($(this).attr("data-id") == $(content).attr("data-id")) {
+            $(content).removeClass("d-none")
+        } 
+        else 
+        {
+            $(content).addClass("d-none")
         }
+    }
 
-    })
+})
 
 
 
-  
+
+
+
+
+
 
 
 
