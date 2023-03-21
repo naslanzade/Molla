@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/scss/about/about.css">
-    <title>About</title>
+    <link rel="stylesheet" href="./assets/scss/product/product.css">
+    <title>Product</title>
 </head>
 
 <body>
@@ -177,7 +177,22 @@
                                     <li>Pages</li>
                                 </a>
                                 <a href="">
-                                    <li>Login</li>
+                                    <li>Default</li>
+                                </a>
+                            </ul>
+
+                            <ul>
+                                <a href="">
+                                    <li><i class="fa-solid fa-chevron-left"></i></li>
+                                </a>
+                                <a href="./home.html">
+                                    <li>Prev</li>
+                                </a>
+                                <a href="">
+                                    <li>Next</li>
+                                </a>
+                                <a href="">
+                                    <li><i class="fa-solid fa-chevron-right"></i></li>
                                 </a>
                             </ul>
                         </div>
@@ -190,208 +205,280 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="product">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="bg-image">
-                            <img src="./assets/images/about/about-header-bg.jpg" alt="">
-                            <h1>About us</h1>
-                            <span>Who we are</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="vision">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-lg-6">
-                        <div class="mission">
-                            <h2>Our Vision</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                                Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel,
-                                nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget
-                                blandit nunc tortor eu nibh. </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-lg-6">
-                        <div class="mission">
-                            <h2>Our Mission</h2>
-                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero
-                                eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed
-                                lectus. <br>
-                                Praesent elementum hendrerit tortor. Sed semper lorem at felis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="who-we">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-lg-6">
-                        <div class="text">
-                            <h2>
-                                Who We Are
-                            </h2>
-                            <p class="txt">Pellentesque odio nisi, euismod pharetra a ultricies <br>in diam. Sed arcu.
-                                Cras
-                                consequat</p>
-
-                            <p class="txt-1">Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales
-                                leo, eget blandit
-                                nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus
-                                metus libero eu augue. </p>
-                            <a href="" class="btn"><span>VIEW OUR NEWS</span> <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 col-lg-6">
-                        <div class="image">
-                            <div class="image-1">
-                                <img class="img1" src="./assets/images/about/img-1.jpg" alt="">
-                                <img class="img2" src="./assets/images/about/img-2.jpg" alt="">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="tab">
+                            <div class="image">
+                                <img data-id="1" class="active-tab item" src="./assets/images/products/product-2.jpg"
+                                    alt="">
+                                <img data-id="2" class="item" src="./assets/images/products/product-1.jpg" alt="">
+                                <img data-id="3" class="item" src="./assets/images/products/product-3.jpg" alt="">
                             </div>
-
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="brands">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="main-image">
+                            <div class="image-tab">
+                                <img data-id="1" class="active-image item" src="./assets/images/products/product-2.jpg"
+                                    alt="">
+                                <img data-id="2" class="d-none" src="./assets/images/products/product-1.jpg" alt="">
+                                <img data-id="3" class="d-none" src="./assets/images/products/product-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 col-sm-12">
                         <div class="right-side">
-                            <h2>The world's premium design brands in one destination.</h2>
-                            <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-                                dapibus id, mattis vel, nis</p>
+                            <div class="heading">
+                                <h2>Microsoft – Refurbish Xbox One S 500GB</h2>
+                                <div class="rates">
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <i class="fa-solid fa-star star-1"></i>
+                                    <p>(2 Reviews)</p>
+                                </div>
+
+                                <div class="price">
+                                    <div class="price">
+                                        <p>$<span>279.99</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="description">
+                                    <p>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed
+                                        lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.
+                                        Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu
+                                        pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
+                                </div>
+
+                                <div class="filter">
+                                    <form action="">
+                                        <label for="">Qty:</label>
+
+                                        <input type="number" class="text-center" max="1" max="100" required value="1">
+
+
+                                    </form>
+                                </div>
+
+                                <div class="cart">
+                                    <a href="" class="btn btn-primary">
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>Add to Wishlist</span>
+                                </div>
+
+                                <div class="category">
+                                    <span>Category:</span>
+                                    <a href=""><span>Accessories,</span></a>
+                                    <a href=""><span>Video Games</span></a>
+                                    <a href=""><span>Entertainment</span></a>
+                                </div>
+
+                                <div class="socials">
+                                    <span>Share:</span>
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+
+                            </div>
                         </div>
+
+
                     </div>
-                    <div class="col-lg-2 col-md-12 col-sm-12">
-                        <div class="brand">
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="head">
                             <ul>
-                                <li><img src="./assets/images/main/logo-1.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-4.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-7.png" alt=""></li>
+                                <li><span data-id="1" class="active-menu"> Description</span></li>
+                                <li><span data-id="2"> Additional Information</span></li>
+                                <li><span data-id="3"> Shipping & Returns</span></li>
+                                <li><span data-id="4"> Reviews (2)</span></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12 col-sm-12">
-                        <div class="brand">
+                        <div class="description" data-id="1">
+                            <h3>Product Information</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                Quisque volutpat
+                                mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper
+                                suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam
+                                porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices
+                                nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+                                cursus. </p>
+
                             <ul>
-                                <li><img src="./assets/images/main/logo-2.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-5.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-8.png" alt=""></li>
+                                <li>Nunc nec porttitor turpis. In eu risus enim. In vitae mollis elit. </li>
+                                <li>Vivamus finibus vel mauris ut vehicula.</li>
+                                <li>Nullam a magna porttitor, dictum risus nec, faucibus sapien.</li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-12 col-sm-12">
-                        <div class="brand">
-                            <ul>
-                                <li><img src="./assets/images/main/logo-3.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-6.png" alt=""></li>
-                                <li><img src="./assets/images/main/logo-9.png" alt=""></li>
-                            </ul>
+                            <p class="text-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                Quisque volutpat
+                                mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper
+                                suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam
+                                porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices
+                                nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+                                cursus. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section id="team">
+        <section id="product-card">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="heading">
-                            <h2>Meet Our Team</h2>
+                            <h3>You May Also Like</h3>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="members">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="card">
                             <div class="image">
-                                <img src="./assets/images/about/member-1.jpg" alt="">
-                                <p class="name">Samanta Grey</p>
-                                <p class="position">Founder & Ceo</p>
+                                <img src="./assets/images/main/product_1.jpg" alt="">
+                                <div class="sale">
+                                    <p>Sale</p>
+                                    <p>Top</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>                                   
+                                </div>
+                                <div class="glasses">
+                                    <i class="fa-solid fa-glasses"></i>                                    
+                                </div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <span>select options</span>
+                                </div>
+                                <div class="description">
+                                    <p>Apple - Watch Series 3 with White sport Band</p>
+                                </div>
+                                <div class="price">
+                                    <span>$214.99-$217.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="card" data-id="2">
+                            <div class="image">
+                                <img src="./assets/images/main/product_3.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p>Sale</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>                                   
+                                </div>
+                                <div class="glasses">
+                                    <i class="fa-solid fa-glasses"></i>                                    
+                                </div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>add to cart</span>
+                                </div>
+                                <div class="description">
+                                    <p>GoPro - HERO7 Black HD Waterproof Action</p>
+                                </div>
+                                <div class="price">
+                                    <p>$<span>130.00</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="members">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="card" data-id="7">
                             <div class="image">
-                                <img src="./assets/images/about/member-2.jpg" alt="">
-                                <p class="name">Bruce Sutton</p>
-                                <p class="position">Sales & Marketing Manager</p>
+                                <img src="./assets/images/main/product_6.jpg" alt="">
+                                <div class="top">
+                                    <p>Top</p>
+                                    
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>                                   
+                                </div>
+                                <div class="glasses">
+                                    <i class="fa-solid fa-glasses"></i>                                    
+                                </div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>add to cart</span>
+                                </div>
+                                <div class="description">
+                                    <p>Google - Pixel 6.2-Inch 3 XL 128GB </p>
+                                </div>
+                                <div class="price">
+                                    <p>$<span>40.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="card" data-id="1">
+                            <div class="image">
+                                <img src="./assets/images/main/product_5.jpg" alt="">
+                                <div class="new">
+                                    <p>New</p>
+                                    <p>Sale</p>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>                                   
+                                </div>
+                                <div class="glasses">
+                                    <i class="fa-solid fa-glasses"></i>                                    
+                                </div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>add to cart</span>
+                                </div>
+                                <div class="description">
+                                    <p>Home Smart Speaker with Google</p>
+                                </div>
+                                <div class="price">
+                                    <p>$<span>129.99</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="members">
-                            <div class="image">
-                                <img src="./assets/images/about/member-3.jpg" alt="">
-                                <p class="name">Janet Joy</p>
-                                <p class="position">Product Manager</p>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
         </section>
 
-        <section id="customer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="heading">
-                            <h2>What Customer Say About Us</h2>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="slides">
-                            <i class="fa-solid fa-chevron-left"></i>
-                            <div class="slide">
-                                <div class="image">
-                                    <img src="./assets/images/about/user-1.jpg" alt="">
-                                    <p class="comment">“ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Pellentesque aliquet
-                                        nibh nec urna.
-                                        In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
-                                        sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc
-                                        tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. ”</p>
-                                    <p class="name">Jenson Gregory</p>
-                                    <span>Customer</span>
-                                </div>
-                                <div class="image">
-                                    <img src="./assets/images/about/user-2.jpg" alt="">
-                                    <p class="comment">“ Impedit, ratione sequi, sunt incidunt magnam et. Delectus
-                                        obcaecati optio eius
-                                        error libero perferendis nesciunt atque dolores magni recusandae! Doloremque
-                                        quidem error eum quis similique doloribus natus qui ut ipsum.Velit quos ipsa
-                                        exercitationem, vel unde obcaecati impedit eveniet non. ”</p>
-                                    <p class="name">Victoria Ventura</p>
-                                    <span>Customer</span>
-                                </div>
-                            </div>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -518,18 +605,12 @@
 
 
 
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/f53cdaa4b1.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/about/about.js"></script>
+    <script src="./assets/js/product/product.js"></script>
 </body>
 
 </html>

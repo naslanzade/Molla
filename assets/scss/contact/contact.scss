@@ -539,230 +539,351 @@
     }
 }
 
+#contact {
 
-#log {
-    
-
-    img {
+    .bg-image {
+        position: relative;
         width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            top: 190px;
+            left: 550px;
+            color: white;
+            font-family: myThirdFont;
+
+        }
+
+        span {
+            position: absolute;
+            top: 240px;
+            left: 580px;
+            color: white;
+            font-family: myThirdFont;
+        }
     }
 
-        .log-page {
-            position: relative;
-            width: 600px;
-            height: 550px;
-            
-            bottom: 650px;
-            background-color: white;
-            left: 350px;
 
-            .heading {
-                position: relative;
-                top: 70px;
+}
 
-                ul {
-                    display: flex;
-                    list-style: none;
-                    justify-content: space-evenly !important;
+#information {
+    margin-top: 50px;
 
-                    li {
-                        font-size: 27px;
-                        font-family: myThirdFont;
-                        width: 150px;
-                        text-align: center;
-                    }
+    .contact {
+        h2 {
+            font-family: myThirdFont;
+            font-size: 24px;
+            font-weight: 900;
+        }
 
-                    li:nth-child(1) {
-                        border-bottom: 3px $hover-color solid;
+        p {
+            font-family: myThirdFont;
+            color: #777;
+            font-size: 15.5px;
+        }
+    }
 
-                    }
+    .office {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
 
+        .left {
 
-                }
-            }
-
-
-
-            .login {
-
-                position: absolute;
-                top: 150px;
-                left: 70px;
-
-                label {
-                    font-family: myThirdFont;
-                    color: #777;
-                }
-
-
-                input {
-                    width: 460px;
-                    height: 40px;
-                    margin-top: 10px;
-                    color: #777;
-                    background-color: #fafafa;
-                    border: 1px solid #ebebeb;
-                }
-
+            h3 {
+                font-family: myThirdFont;
+                font-size: 20px;
+                font-weight: 400;
 
             }
 
-            .login-pass {
-
-                position: absolute;
-                top: 250px;
-                left: 70px;
-
-                label {
-                    font-family: myThirdFont;
-                    color: #777;
-                }
+            ul {
+                list-style: none;
+                padding: 0;
 
 
-                input {
-                    width: 460px;
-                    height: 40px;
-                    margin-top: 10px;
-                    color: #777;
-                    background-color: #fafafa;
-                    border: 1px solid #ebebeb;
-                }
+                li {
 
-
-            }
-
-
-            .footer-button {
-
-                position: absolute;
-                top: 350px;
-                left: 70px;
-
-                button {
-                    width: 120px;
-                    background-color: white;
-                    color: $hover-color;
-                    border: 1px solid $hover-color;
-
-                    span {
-                        font-family: myThirdFont;
-                    }
-                }
-
-                button:hover {
-                    background-color: $hover-color;
-                }
-
-                button:hover span {
-                    color: white;
-                }
-
-                button:hover i {
-                    color: white;
-                }
-            }
-
-
-            .checkbox {
-
-                position: absolute;
-                top: 355px;
-                left: 220px;
-
-                input {
-                    width: 16px;
-                    height: 16px;
-                }
-
-                label {
-                    font-family: myThirdFont;
-                    color: #777;
-                    font-size: 15px;
-                }
-
-                a {
-                    position: absolute;
-                    top: 3px;
-                    width: 170px;
-                    left: 150px;
-                    font-family: myThirdFont;
-                    color: #777;
-                    text-decoration: none;
-                    font-size: 15px;
-                }
-
-            }
-
-
-
-
-            .choice {
-                position: absolute;
-                text-align: center;
-                top: 415px;
-                left: 250px;
-
-                p {
-
-                    font-family: myThirdFont;
-                    color: #777;
-                    font-size: 15px;
-                }
-            }
-
-
-            .socials {
-                display: flex;
-                justify-content: space-evenly;
-                position: relative;
-                top: 400px;
-
-
-                .link {
-
-                    width: 200px;
-                    height: 35px;
-                    border: 0.5px solid #adacac;
-                    text-align: center;
+                    width: 260px;
+                    padding-top: 10px;
+                    position: relative;
 
                     a {
                         text-decoration: none;
-                        color: #333;
                         font-family: myThirdFont;
-                        font-size: 13px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #777;
+                        margin-left: 33px;
 
 
-                        .fa-google {
-                            color: #c33;
-                        }
-
-                        .fa-facebook-f {
-                            color: #36c;
-                        }
                     }
 
+                    i {
+                        position: absolute;
+                        color: $hover-color;
+                        top: 15px;
 
-
-                }
-
-                .link:hover {
-                    background-color: #f5f6f9;
+                    }
                 }
             }
-
-
 
 
         }
 
 
 
+        .right {
+
+
+
+            h3 {
+                font-family: myThirdFont;
+                font-size: 20px;
+                font-weight: 400;
+
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+
+                li {
+
+                    width: 200px;
+                    padding-top: 10px;
+                    position: relative;
+
+                    a {
+                        text-decoration: none;
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #777;
+                        margin-left: 33px;
+
+
+                    }
+
+                    i {
+                        position: absolute;
+                        color: $hover-color;
+                        top: 15px;
+
+                    }
+                }
+            }
+
+        }
 
 
     }
 
 
+    .right {
+
+
+        .name {
+            height: 41px;
+            width: 250px;
+            font-weight: 300;
+            color: #777;
+            background-color: #fafafa;
+            border: 1px solid #ebebeb;
+            outline: none;
+            padding-left: 10px;
+
+        }
+
+        .email {
+            height: 41px;
+            width: 250px;
+            font-weight: 300;
+            color: #777;
+            background-color: #fafafa;
+            border: 1px solid #ebebeb;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 5px;
+
+        }
+
+        .phone {
+            height: 41px;
+            width: 250px;
+            font-weight: 300;
+            color: #777;
+            background-color: #fafafa;
+            border: 1px solid #ebebeb;
+            outline: none;
+            padding-left: 10px;
+            margin-top: 20px;
+
+        }
+
+        .subject {
+            height: 41px;
+            width: 250px;
+            font-weight: 300;
+            color: #777;
+            background-color: #fafafa;
+            border: 1px solid #ebebeb;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-top: 20px;
+
+        }
+
+        .message {
+            width: 80%;
+            font-weight: 300;
+            color: #777;
+            background-color: #fafafa;
+            border: 1px solid #ebebeb;
+            outline: none;
+            padding-left: 10px;
+            margin-top: 20px;
+
+        }
+
+        button {
+            margin-top: 20px;
+            width: 120px;
+            background-color: white;
+            color: $hover-color;
+            border: 1px solid $hover-color;
+
+            border-radius: 0 span {
+                font-family: myThirdFont;
+            }
+        }
+
+        button:hover {
+            background-color: $hover-color;
+        }
+
+        button:hover span {
+            color: white;
+        }
+
+        button:hover i {
+            color: white;
+        }
+
+
+    }
+
+
+}
+
+#stores {
+    margin-top: 100px;
+
+    .heading {
+        h2 {
+            text-align: center;
+            font-family: myThirdFont;
+            font-size: 24px;
+            font-weight: 900;
+
+        }
+    }
+
+    .image {
+        margin-top: 50px;
+    }
+
+
+    .content {
+        margin-top: 70px;
+        line-height: 7px;
+
+        h3 {
+            font-family: myThirdFont;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: myThirdFont;
+            color: #777;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: myThirdFont;
+            color: #777;
+            font-size: 15px;
+
+
+        }
+
+        a:hover {
+            color: $hover-color;
+            cursor: pointer;
+        }
+
+    }
+
+
+    .hours {
+
+        margin-top: 50px;
+        line-height: 7px;
+
+        h3 {
+            font-family: myThirdFont;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: myThirdFont;
+            color: #777;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-family: myThirdFont;
+            color: $hover-color;
+            font-size: 15px;
+            background-color: white;
+            border: none;
+            font-weight: 900;
+
+        }
+
+        .btn:hover {
+            color: $hover-color;
+            cursor: pointer;
+            border-bottom: $hover-color;
+        }
+
+    }
+}
+
+
+#map{
+
+    margin-top: 100px;
+    img {
+        width: 100%;
+        
+    }
+}
+
 #foot-side {
+
+    margin-top: 100px;
     .logo {
 
         .image {
