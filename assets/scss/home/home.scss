@@ -1418,7 +1418,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -2057,7 +2057,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -2465,7 +2465,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color:$hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -2690,7 +2690,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -2903,11 +2903,6 @@
 
             }
 
-
-
-
-
-
             .wishlist {
                 position: absolute;
                 display: none;
@@ -2916,7 +2911,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -3151,7 +3146,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
@@ -3479,7 +3474,7 @@
                     position: absolute;
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(218, 142, 0);
+                    background-color: $hover-color;
                     color: #333;
                     border-radius: 50%;
                     font-size: 15px;
