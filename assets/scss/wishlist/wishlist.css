@@ -390,6 +390,8 @@
 
 #mini-nav .mini {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 #mini-nav .mini ul {
   display: flex;
@@ -407,220 +409,153 @@
   cursor: pointer;
   color: rgb(248, 191, 86);
 }
+#mini-nav .mini ul a i:hover {
+  cursor: pointer;
+  color: rgb(248, 191, 86);
+}
 
-#about .bg-image {
+#wishlist-blog img {
+  width: 100%;
+}
+#wishlist-blog .bg {
   position: relative;
-  width: 100%;
 }
-#about .bg-image img {
-  width: 100%;
-}
-#about .bg-image h1 {
+#wishlist-blog .bg h3 {
   position: absolute;
-  top: 190px;
-  left: 600px;
-  color: white;
+  left: 590px;
+  bottom: 70px;
   font-family: myThirdFont;
-}
-#about .bg-image span {
-  position: absolute;
-  top: 240px;
-  left: 635px;
-  color: white;
-  font-family: myThirdFont;
-}
-
-#vision {
-  margin-top: 50px;
-}
-#vision .mission h2 {
-  font-family: myThirdFont;
-  font-size: 24px;
   font-weight: 900;
 }
-#vision .mission p {
+#wishlist-blog .bg span {
+  position: absolute;
+  left: 610px;
+  bottom: 50px;
   font-family: myThirdFont;
-  color: #777;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgb(248, 191, 86);
 }
 
-#who-we {
+#cart .icon {
+  text-align: center;
   margin-top: 70px;
-  background-color: #f9f9f9 !important;
-  height: 450px;
 }
-#who-we .text {
-  margin-top: 50px;
+#cart .icon .fa-heart {
+  font-size: 170px;
+  color: #666;
 }
-#who-we .text h2 {
+#cart .icon p {
   font-family: myThirdFont;
-  font-size: 24px;
-  font-weight: 900;
+  margin-top: 10px;
+  color: #666;
+  font-size: 15px;
 }
-#who-we .text .txt {
-  margin-top: 20px;
-  font-family: myThirdFont;
-  font-size: 17px;
-  color: rgb(248, 191, 86);
-  font-weight: 700;
-}
-#who-we .text .txt-1 {
-  margin-top: 50px;
-  font-family: myThirdFont;
-  font-size: 13px;
-  color: #777;
-  width: 470px;
-}
-#who-we .text .btn {
-  width: 200px;
-  border: 1px solid rgb(248, 191, 86);
+#cart .icon a {
   text-decoration: none;
-  height: 40px;
-  color: rgb(248, 191, 86);
-}
-#who-we .text .btn:hover {
+  border: 1px solid transparent;
+  border-radius: 0;
+  width: 150px;
   background-color: rgb(248, 191, 86);
   color: white;
-}
-#who-we .image {
-  position: relative;
-  text-align: right;
-  top: 50px;
-}
-#who-we .image .img1 {
-  position: relative;
-  z-index: 2;
-  top: 40px;
-  right: 150px;
-  border: 2rem solid #f9f9f9;
-}
-#who-we .image .img2 {
-  position: absolute;
-  right: 10px;
-  z-index: 1;
-}
-
-#brands .right-side {
-  margin-top: 70px;
-}
-#brands .right-side h2 {
   font-family: myThirdFont;
-  font-size: 24px;
-  font-weight: 900;
-  width: 430px;
 }
-#brands .right-side p {
-  margin-top: 30px;
-  font-family: myThirdFont;
-  color: #777;
-  width: 490px;
-  font-size: 13px;
+#cart .table-side .table img {
+  width: 50px;
+  height: 50px;
 }
-#brands .brand {
-  margin-top: 30px;
-}
-#brands .brand ul {
-  list-style: none;
-  padding: 0;
-}
-#brands .brand ul li {
-  line-height: 100px;
-}
-
-#team {
-  margin-top: 70px;
-}
-#team .heading {
-  text-align: center;
-}
-#team .heading h2 {
-  font-family: myThirdFont;
-  font-size: 24px;
-  font-weight: 900;
-}
-#team .members {
-  margin-top: 30px;
-}
-#team .members .image {
-  text-align: center;
-  line-height: 5px;
-}
-#team .members .image .name {
-  margin-top: 23px;
-  color: black;
+#cart .table-side .table th {
   font-family: myThirdFont;
   font-size: 15px;
-  font-weight: 700;
+  color: #666;
+  font-weight: lighter;
 }
-#team .members .image .position {
-  color: #777;
-  font-family: myThirdFont;
-  font-size: 15px;
-}
-
-#customer {
-  margin-top: 70px;
-  height: 450px;
-  background-color: #f9f9f9 !important;
-}
-#customer .heading {
-  text-align: center;
+#cart .table-side .table tbody td {
   margin-top: 50px;
 }
-#customer .heading h2 {
+#cart .table-side .table tbody td span {
+  font-size: 13px;
+}
+#cart .table-side .table tbody .option .btn {
+  border: 0.5px solid rgb(248, 191, 86);
+  background-color: white;
+  color: rgb(248, 191, 86);
+  border-radius: 0;
+}
+#cart .table-side .table tbody .option .btn:hover {
+  background-color: rgb(248, 191, 86);
+  color: white;
+  cursor: pointer;
+}
+#cart .table-side .table tbody .option .btn:hover span {
+  color: white;
+}
+#cart .table-side .table tbody .option .btn:hover .fa-cart-plus {
+  color: white;
+}
+#cart .table-side .table tbody .option .fa-cart-plus {
+  margin-left: 5px;
+  color: rgb(248, 191, 86);
+  font-size: 12px;
+}
+#cart .table-side .table tbody .option span {
+  color: rgb(248, 191, 86);
+  font-weight: 400;
+  margin-left: 10px;
   font-family: myThirdFont;
-  font-size: 24px;
+  font-size: 12px;
+}
+#cart .table-side .table tbody .stock {
+  color: rgb(248, 191, 86);
   font-weight: 900;
+  font-family: myThirdFont;
+  font-size: 15px;
 }
-#customer .slides {
-  position: relative;
-  top: 20px;
-}
-#customer .slides .fa-chevron-left {
-  left: 20px;
-  position: absolute;
-  z-index: 1;
-  cursor: pointer;
-  font-size: 20px;
+#cart .table-side .table tbody .price {
   color: rgb(248, 191, 86);
-  top: 120px;
-  transition: all 0.5s;
+  font-weight: 900;
+  font-family: myThirdFont;
+  font-size: 15px;
 }
-#customer .slides .fa-chevron-right {
-  left: 1200px;
-  position: absolute;
-  z-index: 1;
+#cart .table-side .table tbody .name {
+  font-family: myThirdFont;
+  margin-top: 20px;
+}
+#cart .table-side .table tbody .fa-xmark {
+  color: #939393;
+}
+#cart .table-side .table tbody .fa-xmark:hover {
   cursor: pointer;
-  font-size: 20px;
-  color: rgb(248, 191, 86);
-  top: 120px;
-  transition: all 0.5s;
+  color: #333;
 }
-#customer .slides .slide .image img {
-  margin-left: 600px;
+#cart .table-side .socials {
+  margin-top: 20px;
+}
+#cart .table-side .socials span {
+  color: #666;
+  font-weight: 500;
+  margin-left: 5px;
+  font-family: myThirdFont;
+}
+#cart .table-side .socials i {
+  margin-left: 7px;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  padding: 10px;
   border-radius: 50%;
-}
-#customer .slides .slide .image .comment {
-  text-align: center;
-  margin-left: 270px;
-  margin-top: 30px;
-  width: 740px;
-  font-family: myThirdFont;
   color: #777;
+  border: 0.5px solid #e1e2e6;
 }
-#customer .slides .slide .image .name {
-  margin-left: 600px;
-  font-family: myThirdFont;
-  color: black;
-  font-weight: 600;
-}
-#customer .slides .slide .image span {
-  margin-left: 620px;
-  font-family: myThirdFont;
-  color: #777;
+#cart .table-side .socials i:hover {
+  border: 0.5px solid rgb(248, 191, 86);
+  color: rgb(248, 191, 86);
+  cursor: pointer;
 }
 
 #foot-side {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #foot-side .logo .image img {
   width: 105px;
@@ -693,4 +628,4 @@
 #socials .payments {
   color: #777;
   font-family: myThirdFont;
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=wishlist.css.map */

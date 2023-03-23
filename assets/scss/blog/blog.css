@@ -166,6 +166,10 @@
   text-align: center;
   position: relative;
 }
+#header-top .heading-down .right-icon .favorite a {
+  text-decoration: none;
+  color: white;
+}
 #header-top .heading-down .right-icon .favorite i {
   font-size: 25px;
   cursor: pointer;
@@ -195,6 +199,10 @@
 #header-top .heading-down .right-icon .cart {
   text-align: center;
   position: relative;
+}
+#header-top .heading-down .right-icon .cart a {
+  text-decoration: none;
+  color: white;
 }
 #header-top .heading-down .right-icon .cart i {
   font-size: 25px;

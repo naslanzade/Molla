@@ -222,6 +222,13 @@
                 text-align: center;
                 position: relative;
 
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
+
                 i {
                     font-size: 25px;
                     cursor: pointer;
@@ -259,6 +266,12 @@
             .cart {
                 text-align: center;
                 position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
 
                 i {
                     font-size: 25px;
@@ -325,7 +338,6 @@
         }
     }
 }
-
 
 #nav {
     border: 1px solid #333;
@@ -659,9 +671,7 @@
 
     }
 
-    .right-side{
-        
-
+    .right-side{        
         position: fixed;
 
         .filter-side {
@@ -1782,8 +1792,6 @@
                         .btn:hover .fa-cart-plus{
                             color: white;
                         }
-
-
             
                         .fa-cart-plus{
                             margin-left: 5px;
