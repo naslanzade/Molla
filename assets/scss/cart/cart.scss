@@ -911,3 +911,124 @@
 
 
 }
+
+#foot-side {
+
+    margin-top: 100px;
+    .logo {
+
+        .image {
+
+            img {
+                width: 105px;
+                height: 25px;
+
+            }
+
+            .desc {
+                margin-top: 20px;
+
+                p {
+                    width: 290px;
+                    letter-spacing: 0;
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                    color: #777;
+
+                }
+            }
+
+            .contact {
+                position: relative;
+                font-size: 17px;
+                border: 0.5px solid #ebebeb;
+                border-radius: 0.3rem;
+                line-height: 1.25;
+                width: 270px;
+                height: 75px;
+
+
+                i {
+                    position: absolute;
+                    left: 10px;
+                    font-size: 30px;
+                    top: 18px;
+                    color: $hover-color;
+
+                }
+
+                p {
+                    position: absolute;
+                    left: 50px;
+                    top: 10px;
+                    font-size: 15px;
+                    color: #777;
+
+
+                }
+
+
+                a {
+                    position: absolute;
+                    text-decoration: none;
+                    color: #333;
+                    left: 50px;
+                    top: 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+    .customer {
+
+        .services {
+            h4 {
+                color: #333;
+
+                font-size: 17px;
+            }
+
+        }
+
+        .customer-services {
+
+            ul {
+                list-style: none;
+                margin-top: 20px;
+                padding: 0%;
+
+                li {
+
+                    margin-top: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: #777;
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                    }
+
+                    a:hover {
+                        color: $hover-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+#socials {
+
+    .payments {
+        color: #777;
+        font-family: myThirdFont;
+    }
+}
