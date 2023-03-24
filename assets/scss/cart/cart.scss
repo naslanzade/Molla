@@ -557,7 +557,7 @@
     }
 }
 
-#wishlist-blog {
+#cart-blog {
 
     img {
         width: 100%;
@@ -569,7 +569,7 @@
 
         h3 {
             position: absolute;
-            left: 590px;
+            left: 530px;
             bottom: 70px;
             font-family: myThirdFont;
             font-weight: 900;
@@ -589,165 +589,159 @@
     }
 }
 
-#cart{
-    .icon{
+#cart {
+    .icon {
         text-align: center;
         margin-top: 70px;
 
 
-        .fa-heart{
-            font-size: 170px;
+        .fa-cart-shopping {
+            font-size: 130px;
             color: #666;
         }
 
-        p{
-            font-family:myThirdFont;
-            margin-top: 10px;
+        p {
+            font-family: myThirdFont;
+            margin-top: 30px;
             color: #666;
             font-size: 15px;
         }
 
-        a{
+        a {
+            margin-top: 30px;
             text-decoration: none;
             border: 1px solid transparent;
             border-radius: 0;
-            width: 150px;
+            width: 200px;
             background-color: $hover-color;
             color: white;
-            font-family:myThirdFont;
+            font-family: myThirdFont;
         }
     }
 
+    .table {
 
-    .table-side{
+        img {
+            width: 50px;
+            height: 50px;
+        }
 
-        .table{
-            
+        th {
+            font-family: myThirdFont;
+            font-size: 15px;
+            color: #666;
+            font-weight: lighter;
+        }
 
-            img{
-                width: 50px;
-                height: 50px;
+        tbody {
+
+
+            td {
+                margin-top: 50px;
+
+                span {
+                    font-size: 13px;
+                }
             }
 
-            th{
+
+            .stock {
+
+                color: $hover-color;
+                font-weight: 900;
                 font-family: myThirdFont;
                 font-size: 15px;
-                color: #666;
-                font-weight: lighter;
+
             }
 
-            tbody{
+            .price {
 
-                
-                td{
-                    margin-top: 50px;
-                    span{
-                        font-size: 13px;
-                    }
-                }
+                color: $hover-color;
+                font-weight: 900;
+                font-family: myThirdFont;
+                font-size: 15px;
 
-                .option{
+            }
 
-                       
-                    .btn {
-                        border: 0.5px solid $hover-color;
-                        background-color: white;
-                        color: $hover-color;
-                        border-radius: 0;                        
-                    }            
+            .name {
+                font-family: myThirdFont;
+                margin-top: 20px;
+
+            }
+
+            .fa-xmark {
+                color: #939393;
+            }
+
+            .fa-xmark:hover {
+                cursor: pointer;
+                color: #333;
+            }
+        }
+    }
+
+    .total {
         
-                    .btn:hover {
-                        background-color: $hover-color;
-                        color: white;
-                        cursor: pointer;
-                    }
+        height: 450px;
+        width: 300px;
+        border: 0.5px dashed #d7d7d7;
+        background-color: #f9f9f9;
 
-                    .btn:hover span{
-                        color: white;
-                    }
 
-                    .btn:hover .fa-cart-plus{
-                        color: white;
-                    }
-        
-                    .fa-cart-plus{
-                        margin-left: 5px;
-                        color: $hover-color;
-                        font-size: 12px;
-                    }
-        
-                    span {
-                        color: $hover-color;
-                        font-weight: 400;
-                        margin-left: 10px;
-                        font-family: myThirdFont;
-                        font-size: 12px;
-                    }
+        .card {
+            margin-top: 50px;
+            margin-left: 20px;
+            border: none;
+            font-family: myThirdFont;
+            font-weight: 600;
+            background-color: #f9f9f9;
+        }
 
-                  
-                }
+        .ship {
+            margin-top: 30px;
+            margin-left: 20px;
+            border: none;
+            font-family: myThirdFont;
+        }
 
-                .stock{
+        ul {
+            padding: 0;
+            list-style: none;
+            margin-left: 20px;
+            color: #666;
+            font-family: myThirdFont;
+            font-size: 13px;
 
-                    color: $hover-color;
-                    font-weight: 900;
-                    font-family:myThirdFont;
-                    font-size: 15px;
-
-                }
-
-                .price{
-
-                    color: $hover-color;
-                    font-weight: 900;
-                    font-family:myThirdFont;
-                    font-size: 15px;
-
-                }
-
-                .name{
-                    font-family:myThirdFont;
-                    margin-top: 20px;
-                   
-                }
-
-                .fa-xmark{
-                    color: #939393;
-                }
-
-                .fa-xmark:hover{
-                    cursor: pointer;
-                    color: #333;
+            li {
+                span {
+                    float: right;
+                    margin-right: 10px;
+                    font-size: 13px;
                 }
             }
         }
 
-        .socials {
-            margin-top: 20px;
 
-            span {
-                color: #666;
-                font-weight: 500;
-                margin-left: 5px;
+        .location {
+            .country {
+                margin-top: 30px;
+                margin-left: 20px;
+                border: none;
                 font-family: myThirdFont;
             }
 
+            .address {
+                text-decoration: none;
+                margin-left: 20px;
+                color: #999;
+                border-bottom: 1px solid #999;
+                font-family: myThirdFont;
+                font-size: 15px;
 
-            i {
-                margin-left: 7px;
-                font-size: 10px;
-                width: 30px;
-                height: 30px;
-                background-color: transparent;
-                padding: 10px;
-                border-radius: 50%;
-                color: #777;
-                border: 0.5px solid #e1e2e6;
 
             }
 
-            i:hover {
-                border: 0.5px solid $hover-color;
+            .address:hover {
                 color: $hover-color;
                 cursor: pointer;
             }
@@ -756,127 +750,89 @@
 
 
 
+
+        .total-pr {
+
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            .total-price {
+               
+                margin-left: 20px; 
+                font-family: myThirdFont;
+                font-size: 20px;
+                color: $hover-color;
+                font-weight: 500;
+
+            }
+
+
+            .total-value{
+               
+                font-family: myThirdFont;
+                font-size: 20px;
+                color: $hover-color;
+                font-weight: 500;
+                margin-right: 20px;
+            }
+
+
+
+
+        }
+
+        .checkout {
+            text-align: center;
+            margin-top: 30px;
+
+
+            .btn {
+                border: 0.5px solid $hover-color;
+                background-color: #f9f9f9;
+                color: $hover-color;
+                border-radius: 0;  
+                font-size: 15px;                      
+            }            
+
+            .btn:hover {
+                background-color: $hover-color;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+
+
+
+    }
+
+    .shopping{
+        margin-top: 20px;
+
+        .btn {
+            border: 0.5px solid  #d7d7d7;
+            background-color: white;
+            color: black;
+            border-radius: 0;  
+            width: 300px;   
+            font-size: 15px;    
+            font-family:myThirdFont;
+                       
+        }            
+    
+       
+    
+        .btn:hover{
+            color: $hover-color;
+            cursor: pointer;
+        }
+    
         
     }
-}
 
-#foot-side {
+    
 
-    margin-top: 100px;
-    .logo {
+    
 
-        .image {
-
-            img {
-                width: 105px;
-                height: 25px;
-
-            }
-
-            .desc {
-                margin-top: 20px;
-
-                p {
-                    width: 290px;
-                    letter-spacing: 0;
-                    font-family: myThirdFont;
-                    font-size: 15px;
-                    color: #777;
-
-                }
-            }
-
-            .contact {
-                position: relative;
-                font-size: 17px;
-                border: 0.5px solid #ebebeb;
-                border-radius: 0.3rem;
-                line-height: 1.25;
-                width: 270px;
-                height: 75px;
-
-
-                i {
-                    position: absolute;
-                    left: 10px;
-                    font-size: 30px;
-                    top: 18px;
-                    color: $hover-color;
-
-                }
-
-                p {
-                    position: absolute;
-                    left: 50px;
-                    top: 10px;
-                    font-size: 15px;
-                    color: #777;
-
-
-                }
-
-
-                a {
-                    position: absolute;
-                    text-decoration: none;
-                    color: #333;
-                    left: 50px;
-                    top: 30px;
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-
-
-    .customer {
-
-        .services {
-            h4 {
-                color: #333;
-
-                font-size: 17px;
-            }
-
-        }
-
-        .customer-services {
-
-            ul {
-                list-style: none;
-                margin-top: 20px;
-                padding: 0%;
-
-                li {
-
-                    margin-top: 10px;
-
-                    a {
-                        text-decoration: none;
-                        color: #777;
-                        font-family: myThirdFont;
-                        font-size: 15px;
-                    }
-
-                    a:hover {
-                        color: $hover-color;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-
-
-}
-
-#socials {
-
-    .payments {
-        color: #777;
-        font-family: myThirdFont;
-    }
 }

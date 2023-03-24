@@ -69,11 +69,12 @@ $(document).ready(function () {
             e.preventDefault();
 
             let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
-            let productName = this.parentNode.nextElementSibling.innerText;
+            let productName = this.parentNode.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".card").getAttribute("data-id"))   
                      
 
+            
             let existProduct = basket.find(m => m.id == productId);
             
 
@@ -120,12 +121,13 @@ $(document).ready(function () {
             e.preventDefault();
 
             let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
-            let productName = this.parentNode.nextElementSibling.nextElementSibling.innerText;
+            let productName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".card").getAttribute("data-id"))           
 
             let existProduct = wishlist.find(m => m.id == productId);
             
+          
             
 
             if (existProduct != undefined) {
