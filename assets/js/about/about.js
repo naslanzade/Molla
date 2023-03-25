@@ -6,15 +6,15 @@ $(document).ready(function () {
         'nextArrow': '.fa-chevron-right',
         'prevArrow': '.fa-chevron-left'
     });
-   
+
     let basketIcon = document.querySelectorAll(".add-basket");
     let basket = [];
 
 
-    if(JSON.parse(localStorage.getItem("basket"))!=null){
-        basket = JSON.parse(localStorage.getItem("basket")) 
+    if (JSON.parse(localStorage.getItem("basket")) != null) {
+        basket = JSON.parse(localStorage.getItem("basket"))
     }
-     
+
 
     basketIcon.forEach(btn => {
         btn.addEventListener("click", function (e) {
@@ -25,12 +25,12 @@ $(document).ready(function () {
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".card").getAttribute("data-id"))
 
-            console.log(productId)
+
 
             let existProduct = basket.find(m => m.id == productId);
 
 
-            
+
 
             if (existProduct != undefined) {
                 existProduct.count += 1;
@@ -62,11 +62,11 @@ $(document).ready(function () {
     }
 
 
-    let wishlistIcon=document.querySelectorAll(".add-wishlist");
-    let wishlist=[];    
+    let wishlistIcon = document.querySelectorAll(".add-wishlist");
+    let wishlist = [];
 
-     if(JSON.parse(localStorage.getItem("wishlist"))!=null){
-        wishlist = JSON.parse(localStorage.getItem("wishlist")) 
+    if (JSON.parse(localStorage.getItem("wishlist")) != null) {
+        wishlist = JSON.parse(localStorage.getItem("wishlist"))
     }
 
     wishlistIcon.forEach(btn => {
@@ -76,11 +76,11 @@ $(document).ready(function () {
             let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
             let productName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.getAttribute("src");
-            let productId = parseInt(this.closest(".card").getAttribute("data-id"))           
+            let productId = parseInt(this.closest(".card").getAttribute("data-id"))
 
             let existProduct = wishlist.find(m => m.id == productId);
-            
-            
+
+
 
             if (existProduct != undefined) {
                 existProduct.count += 1;
@@ -101,7 +101,7 @@ $(document).ready(function () {
     });
 
     getWishlistCount(wishlist);
-    
+
 
     function getWishlistCount(arr) {
         let count = 0;
@@ -113,7 +113,22 @@ $(document).ready(function () {
 
 
 
-    
+
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.querySelector("#nav");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+
+   
 
 
 })

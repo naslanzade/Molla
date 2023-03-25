@@ -57,8 +57,10 @@ $(document).ready(function () {
         $(".active-tab").removeClass("active-tab")
         $(this).addClass("active-tab")
 
+       //$(element).attr("src",$(this).attr("src"))
 
-        let elements = $(".main-image .image-tab")
+       
+        let elements = $(".main-image .image-tab img")
         for (const content of $(elements)) {
             if ($(this).attr("data-id") == $(content).attr("data-id")) {
                 $(content).removeClass("d-none")
@@ -122,6 +124,20 @@ $(document).ready(function () {
 
 
 
+
+    
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.querySelector("#nav");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
 
 
 

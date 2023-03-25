@@ -253,6 +253,15 @@
     right: 7px;
   }
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 #nav {
   border: 1px solid #333;
 }
@@ -330,7 +339,7 @@
   width: 100%;
   height: 30px;
   list-style: none;
-  font-family: mySecondFont;
+  font-family: myThirdFont;
   font-size: 13px;
   border-top: 0.1rem solid #ebebeb;
   border-left: 0.1rem solid #ebebeb;
@@ -542,6 +551,7 @@
 }
 #team .members .image {
   text-align: center;
+  position: relative;
   line-height: 5px;
 }
 #team .members .image .name {
@@ -693,4 +703,29 @@
 #socials .payments {
   color: #777;
   font-family: myThirdFont;
+}
+
+.go-to-top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 50px;
+  margin-left: 95%;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  text-decoration: none;
+  font-size: 22px;
+  padding: 15px;
+  font-family: sans-serif;
+  color: rgb(153, 153, 153);
+  background: rgb(250, 250, 250);
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+.go-to-top:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=about.css.map */
