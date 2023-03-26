@@ -1709,23 +1709,36 @@
   margin-top: 70px;
   text-align: center;
 }
-#outlet .button .text a {
+#outlet .button .text .btn {
   text-decoration: none;
   border: none;
-  width: 400px;
+  width: 300px;
   height: 45px;
-  border: 1px solid black;
+  border: 1.8px solid #ebebeb;
   background-color: #f4f7ff !important;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
-#outlet .button .text a span {
+#outlet .button .text .btn span {
   padding: 10px;
   color: black;
-  font-size: 20px;
+  font-size: 14px;
+  font-family: myThirdFont;
 }
-#outlet .button .text a i {
+#outlet .button .text .btn i {
   color: black;
-  font-size: 20px;
+  font-size: 13px;
+}
+#outlet .button .text .btn:hover {
+  background-color: white !important;
+  cursor: pointer !important;
+}
+#outlet .button .text .btn:hover span {
+  color: rgb(248, 191, 86) !important;
+}
+#outlet .button .text .btn:hover i {
+  color: rgb(248, 191, 86) !important;
 }
 
 #logo {
@@ -1751,10 +1764,6 @@
   color: #777;
   padding-left: 10px;
   padding-right: 15px;
-}
-#trending-products .right-heading ul li:nth-child(1) {
-  color: rgb(248, 191, 86);
-  border-bottom: 1px solid rgb(248, 191, 86);
 }
 #trending-products .right-heading ul li:hover {
   color: rgb(248, 191, 86);
@@ -2172,6 +2181,34 @@
 #trending-products .card-2 .image img {
   width: 100%;
 }
+#trending-products .card-2 .image .sale {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-2 .image .sale p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ef837b;
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 7px;
+}
+#trending-products .card-2 .image .sale p:nth-child(2) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 140px;
+  border-radius: 50%;
+  padding: 10px;
+}
 #trending-products .card-2 .image .top {
   position: absolute;
   left: 20px;
@@ -2495,6 +2532,569 @@
 #trending-products .card-3:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+#trending-products .card-4 {
+  margin-top: 30px;
+  margin-left: 20px;
+  border: none;
+  width: 130%;
+  height: 93%;
+  border: 1px solid #ccc;
+}
+#trending-products .card-4 .image {
+  width: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+#trending-products .card-4 .image img {
+  width: 100%;
+}
+#trending-products .card-4 .image .new {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-4 .image .new p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(166, 199, 108);
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 7px;
+}
+#trending-products .card-4 .image .new p:nth-child(2) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 140px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#trending-products .card-4 .image .wishlist {
+  position: absolute;
+  display: none;
+}
+#trending-products .card-4 .image .wishlist .fa-heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(248, 191, 86);
+  color: #333;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 5px;
+  bottom: 230px;
+  left: 215px;
+}
+#trending-products .card-4 .image .wishlist i:hover {
+  cursor: pointer;
+}
+#trending-products .card-4 .image .icons {
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  top: 210px;
+  display: none;
+}
+#trending-products .card-4 .image .icons .fa-list-check {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-4 .image .icons .fa-glasses {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 175px;
+}
+#trending-products .card-4 .image .icons .fa-cart-plus {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-4 .image .icons i:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-4 .image .names {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  line-height: 15px;
+}
+#trending-products .card-4 .image .names p {
+  color: #bcbaba;
+  font-weight: 300;
+  font-family: myThirdFont;
+  font-size: 15px;
+}
+#trending-products .card-4 .image .names p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-4 .image .description {
+  position: absolute;
+  top: 290px;
+  left: 10px;
+  line-height: 20px;
+}
+#trending-products .card-4 .image .description p {
+  color: black;
+  font-weight: 500;
+  width: 200px;
+  font-size: 15px;
+  font-family: myThirdFont;
+}
+#trending-products .card-4 .image .description p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-4 .image .price {
+  position: absolute;
+  top: 330px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-4 .image .price p {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-4 .image .price p span {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: myThirdFont;
+}
+#trending-products .card-4 .image .rates {
+  display: flex;
+  position: absolute;
+  top: 360px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-4 .image .rates .star {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-4 .image .rates .star-1 {
+  color: #bcbaba;
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-4 .image .rates p {
+  margin-left: 10px;
+  color: #bcbaba;
+  font-family: myThirdFont;
+}
+#trending-products .card-4 .image:hover .wishlist {
+  display: block;
+  margin-top: 30px;
+}
+#trending-products .card-4 .image:hover .icons {
+  display: block;
+}
+#trending-products .card-4:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#trending-products .card-5 {
+  margin-top: 30px;
+  margin-left: 80px;
+  border: none;
+  width: 130%;
+  height: 93%;
+  border: 1px solid #ccc;
+}
+#trending-products .card-5 .image {
+  width: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+#trending-products .card-5 .image img {
+  width: 100%;
+}
+#trending-products .card-5 .image .sale {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-5 .image .sale p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ef837b;
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 7px;
+}
+#trending-products .card-5 .image .sale p:nth-child(2) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 140px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#trending-products .card-5 .image .top {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-5 .image .top p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#trending-products .card-5 .image .wishlist {
+  position: absolute;
+  display: none;
+}
+#trending-products .card-5 .image .wishlist .fa-heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(248, 191, 86);
+  color: #333;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 5px;
+  bottom: 230px;
+  left: 215px;
+}
+#trending-products .card-5 .image .wishlist i:hover {
+  cursor: pointer;
+}
+#trending-products .card-5 .image .icons {
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  top: 210px;
+  display: none;
+}
+#trending-products .card-5 .image .icons .fa-list-check {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-5 .image .icons .fa-glasses {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 175px;
+}
+#trending-products .card-5 .image .icons .fa-cart-plus {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-5 .image .icons i:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-5 .image .names {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  line-height: 15px;
+}
+#trending-products .card-5 .image .names p {
+  color: #bcbaba;
+  font-weight: 300;
+  font-family: myThirdFont;
+  font-size: 15px;
+}
+#trending-products .card-5 .image .names p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-5 .image .description {
+  position: absolute;
+  top: 290px;
+  left: 10px;
+  line-height: 20px;
+}
+#trending-products .card-5 .image .description p {
+  color: black;
+  font-weight: 500;
+  width: 200px;
+  font-size: 15px;
+  font-family: myThirdFont;
+}
+#trending-products .card-5 .image .description p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-5 .image .price {
+  position: absolute;
+  top: 330px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-5 .image .price p {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-5 .image .price p span {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: myThirdFont;
+}
+#trending-products .card-5 .image .rates {
+  display: flex;
+  position: absolute;
+  top: 360px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-5 .image .rates .star {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-5 .image .rates .star-1 {
+  color: #bcbaba;
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-5 .image .rates p {
+  margin-left: 10px;
+  color: #bcbaba;
+  font-family: myThirdFont;
+}
+#trending-products .card-5 .image:hover .wishlist {
+  display: block;
+  margin-top: 30px;
+}
+#trending-products .card-5 .image:hover .icons {
+  display: block;
+}
+#trending-products .card-5:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#trending-products .card-6 {
+  margin-top: 30px;
+  margin-left: 20px;
+  border: none;
+  width: 130%;
+  height: 93%;
+  border: 1px solid #ccc;
+}
+#trending-products .card-6 .image {
+  width: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+#trending-products .card-6 .image img {
+  width: 100%;
+}
+#trending-products .card-6 .image .sale {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-6 .image .sale p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ef837b;
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 7px;
+}
+#trending-products .card-6 .image .sale p:nth-child(2) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 140px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#trending-products .card-6 .image .top {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  align-items: center;
+}
+#trending-products .card-6 .image .top p:nth-child(1) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #7dd2ea;
+  text-align: center;
+  color: white;
+  bottom: 170px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#trending-products .card-6 .image .wishlist {
+  position: absolute;
+  display: none;
+}
+#trending-products .card-6 .image .wishlist .fa-heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(248, 191, 86);
+  color: #333;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 5px;
+  bottom: 230px;
+  left: 215px;
+}
+#trending-products .card-6 .image .wishlist i:hover {
+  cursor: pointer;
+}
+#trending-products .card-6 .image .icons {
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  top: 210px;
+  display: none;
+}
+#trending-products .card-6 .image .icons .fa-list-check {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-6 .image .icons .fa-glasses {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 175px;
+}
+#trending-products .card-6 .image .icons .fa-cart-plus {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+#trending-products .card-6 .image .icons i:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-6 .image .names {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  line-height: 15px;
+}
+#trending-products .card-6 .image .names p {
+  color: #bcbaba;
+  font-weight: 300;
+  font-family: myThirdFont;
+  font-size: 15px;
+}
+#trending-products .card-6 .image .names p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-6 .image .description {
+  position: absolute;
+  top: 290px;
+  left: 10px;
+  line-height: 20px;
+}
+#trending-products .card-6 .image .description p {
+  color: black;
+  font-weight: 500;
+  width: 200px;
+  font-size: 15px;
+  font-family: myThirdFont;
+}
+#trending-products .card-6 .image .description p:hover {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-6 .image .price {
+  position: absolute;
+  top: 330px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-6 .image .price p {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+}
+#trending-products .card-6 .image .price p span {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: myThirdFont;
+}
+#trending-products .card-6 .image .rates {
+  display: flex;
+  position: absolute;
+  top: 360px;
+  left: 10px;
+  line-height: 17px;
+}
+#trending-products .card-6 .image .rates .star {
+  color: rgb(248, 191, 86);
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-6 .image .rates .star-1 {
+  color: #bcbaba;
+  cursor: pointer;
+  font-size: 13px;
+}
+#trending-products .card-6 .image .rates p {
+  margin-left: 10px;
+  color: #bcbaba;
+  font-family: myThirdFont;
+}
+#trending-products .card-6 .image:hover .wishlist {
+  display: block;
+  margin-top: 30px;
+}
+#trending-products .card-6 .image:hover .icons {
+  display: block;
+}
+#trending-products .card-6:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#trending-products .active-tab {
+  color: rgb(248, 191, 86);
+  border-bottom: 1.2px solid rgb(248, 191, 86);
+}
 
 #top-products .left-heading {
   margin-top: 100px;
@@ -2516,10 +3116,6 @@
   padding-left: 10px;
   padding-right: 15px;
 }
-#top-products .right-heading ul li:nth-child(1) {
-  color: rgb(248, 191, 86);
-  border-bottom: 1px solid rgb(248, 191, 86);
-}
 #top-products .right-heading ul li:hover {
   color: rgb(248, 191, 86);
   cursor: pointer;
@@ -2527,7 +3123,6 @@
 #top-products .card {
   margin-top: 20px;
   border: none;
-  border: 1px solid #ccc;
 }
 #top-products .card .image {
   width: 100%;
@@ -2739,6 +3334,10 @@
 }
 #top-products .card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#top-products .active-tab {
+  color: rgb(248, 191, 86);
+  border-bottom: 1.2px solid rgb(248, 191, 86);
 }
 
 #icon .box {

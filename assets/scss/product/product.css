@@ -598,38 +598,157 @@
   font-family: myThirdFont;
   font-weight: 700;
 }
-#tab-menu .head ul li .active-menu {
-  color: rgb(248, 191, 86);
-}
 #tab-menu .head ul li:hover span {
   color: rgb(248, 191, 86);
 }
 #tab-menu .head ul li:hover {
   cursor: pointer;
 }
-#tab-menu .description {
+#tab-menu .active-tab {
+  color: rgb(248, 191, 86);
+}
+#tab-menu .comment .description {
   width: 100%;
   height: 88%;
   border: 1px solid #dadada;
+  line-height: 30px;
 }
-#tab-menu .description h3 {
+#tab-menu .comment .description h3 {
   font-family: myThirdFont;
-  font-size: 18px;
-  margin-left: 40px;
-  margin-top: 40px;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-weight: 600;
 }
-#tab-menu .description p {
+#tab-menu .comment .description .first-tab-text {
   font-family: myThirdFont;
   font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
   margin-left: 40px;
   margin-top: 20px;
+  color: #777;
 }
-#tab-menu .description ul {
+#tab-menu .comment .description .first-tab {
   margin-left: 30px;
 }
-#tab-menu .description ul li {
+#tab-menu .comment .description .first-tab li {
   font-family: myThirdFont;
   font-size: 15px;
+  color: #333;
+}
+#tab-menu .comment .description .second-tab-text-1 {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-top: 20px;
+  color: #777;
+}
+#tab-menu .comment .description .second-tab {
+  margin-left: 30px;
+}
+#tab-menu .comment .description .second-tab li {
+  font-family: myThirdFont;
+  font-size: 15px;
+  color: #333;
+}
+#tab-menu .comment .description .size {
+  font-family: myThirdFont;
+  font-size: 16px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+#tab-menu .comment .description .text-1 {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #777;
+}
+#tab-menu .comment .description .third-tab-text {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #777;
+}
+#tab-menu .comment .description .third-tab-text a {
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+  color: #333;
+}
+#tab-menu .comment .description .third-tab-text a:hover {
+  cursor: pointer;
+  color: rgb(248, 191, 86);
+  border-bottom: 1px solid rgb(248, 191, 86);
+}
+#tab-menu .comment .description .observation {
+  display: flex;
+}
+#tab-menu .comment .description .observation .desc {
+  width: 90%;
+  margin-left: 30px;
+  line-height: 20px;
+}
+#tab-menu .comment .description .observation .desc .heading {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #333;
+}
+#tab-menu .comment .description .observation .desc .four-tab-text {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #777;
+}
+#tab-menu .comment .description .observation .desc a {
+  text-decoration: none;
+  color: #777;
+  font-size: 12px;
+}
+#tab-menu .comment .description .observation .desc a .fa-thumbs-down {
+  margin-left: 10px;
+}
+#tab-menu .comment .description .observation .desc a:hover {
+  color: rgb(248, 191, 86);
+  border-bottom: 1px solid rgb(248, 191, 86);
+}
+#tab-menu .comment .description .observation .info {
+  margin-left: 10px;
+  width: 150px;
+  line-height: 20px;
+  text-align: center;
+}
+#tab-menu .comment .description .observation .info .name {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #333;
+}
+#tab-menu .comment .description .observation .info .fa-star {
+  color: #bcbaba;
+  font-size: 13px;
+}
+#tab-menu .comment .description .observation .info .day {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #bcbaba;
+}
+#tab-menu .comment .description .review {
+  margin-left: 30px;
+  resize: vertical;
 }
 
 #product-card {

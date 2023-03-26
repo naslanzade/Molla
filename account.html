@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./assets/scss/account/account.css">
     <title>Account</title>
 </head>
+
 <body>
     <header>
         <section id="header-top">
@@ -68,16 +70,16 @@
                                         <span class="wish">0</span>
                                         <p>Wishlist</p>
                                     </a>
-                                   
+
                                 </div>
 
                                 <div class="cart">
                                     <a href="./cart.html">
                                         <i class="fa-solid fa-cart-shopping"></i>
-                                    <span class="basket">0</span>
-                                    <p>Cart</p>
+                                        <span class="basket">0</span>
+                                        <p>Cart</p>
                                     </a>
-                                    
+
                                 </div>
 
                             </div>
@@ -116,23 +118,42 @@
                             </div>
                             <div class="center">
                                 <ul>
-                                    <a href="./home.html"><li>Home</li></a>
-                                    <a href="./shop.html"><li>Shop</li></a>
-                                    <a href="./product.html"><li>Product</li></a>
-                                    <a href=""><li class="pages">Pages <i class="fa-solid fa-chevron-down"></i>
+                                    <a href="./home.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="./shop.html">
+                                        <li>Shop</li>
+                                    </a>
+                                    <a href="./product.html">
+                                        <li>Product</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="pages">Pages <i class="fa-solid fa-chevron-down"></i>
                                             <div class="drop">
                                                 <ul class="dropdown-list">
-                                                    <a href="./about.html"><li>About</li></a>
-                                                    <a href="./account.html"><li>Account</li></a>
-                                                    <a href="./cart.html"><li>Cart</li></a>
-                                                    <a href="./wishlist.html"><li>Wishlist</li></a>
+                                                    <a href="./about.html">
+                                                        <li>About</li>
+                                                    </a>
+                                                    <a href="./account.html">
+                                                        <li>Account</li>
+                                                    </a>
+                                                    <a href="./cart.html">
+                                                        <li>Cart</li>
+                                                    </a>
+                                                    <a href="./wishlist.html">
+                                                        <li>Wishlist</li>
+                                                    </a>
                                                 </ul>
                                             </div>
                                         </li>
-                                       
+
                                     </a>
-                                    <a href="./blog.html"><li>Blog</li></a>
-                                    <a href="./contact.html"><li>Contact</li></a>
+                                    <a href="./blog.html">
+                                        <li>Blog</li>
+                                    </a>
+                                    <a href="./contact.html">
+                                        <li>Contact</li>
+                                    </a>
                                 </ul>
                             </div>
                             <div class="right-side">
@@ -154,9 +175,15 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mini">
                             <ul>
-                                <a href="./home.html"><li>Home</li></a>                                
-                                <a href=""><li>Pages</li></a>                                
-                                <a href=""><li>Login</li></a>
+                                <a href="./home.html">
+                                    <li>Home</li>
+                                </a>
+                                <a href="">
+                                    <li>Pages</li>
+                                </a>
+                                <a href="">
+                                    <li>Login</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -164,31 +191,34 @@
             </div>
         </section>
 
-      
+
     </header>
     <main>
-        <section id="log">            
+        <section id="log">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="back-image">
-                            <div class="log-page">
+                            <div class="tab-menu">
                                 <div class="heading">
                                     <ul>
-                                        <li>Sign In</li>
-                                        <li>Register</li>
+                                        <li class="item active-tab" data-id="1">Sign In</li>
+                                        <li class="item" data-id="2">Register</li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <div class="log-page" data-id="1">
                                 <div class="login">
                                     <label for="">Username or email address *</label>
-                                    <form action="">                                        
-                                        <input type="email">                                            
+                                    <form action="">
+                                        <input type="email">
                                     </form>
                                 </div>
                                 <div class="login-pass">
                                     <label for="">Password *</label>
-                                    <form action="">                                            
-                                        <input type="password">                                            
+                                    <form action="">
+                                        <input type="password">
                                     </form>
                                 </div>
                                 <div class="footer-button">
@@ -203,10 +233,7 @@
                                     <input type="checkbox">
                                     <label for="">Remember me</label>
                                     <a href="">Forgot Your Password?</a>
-
                                 </div>
-                                
-                                
                                 <div class="choice">
                                     <p>or sign in with</p>
                                 </div>
@@ -219,10 +246,58 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="log-page d-none" data-id="2">
+                                <div class="login">
+                                    <label for="">Your email address *</label>
+                                    <form action="">
+                                        <input type="email">
+                                    </form>
+                                </div>
+                                <div class="login-pass">
+                                    <label for="">Password *</label>
+                                    <form action="">
+                                        <input type="password">
+                                    </form>
+                                </div>
+                                <div class="footer-button">
+                                    <form action="">
+                                        <button class="btn btn-primary">
+                                            <span>SIGN UP </span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I agree to the privacy policy *</label>                               
+                                </div>
+
+                                <div class="choice">
+                                    <p>or sign in with</p>
+                                </div>
+                                <div class="socials">
+                                    <div class="link">
+                                        <a href=""><i class="fa-brands fa-google"></i> Login With Google</a>
+                                    </div>
+                                    <div class="link">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i> Login With Facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
+
+
+
+
+
+
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
@@ -373,6 +448,7 @@
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/f53cdaa4b1.js" crossorigin="anonymous"></script>
     <script src="./assets/js/account/account.js"></script>
-    
+
 </body>
+
 </html>

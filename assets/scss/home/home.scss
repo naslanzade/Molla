@@ -13,6 +13,10 @@
 
 }
 
+
+
+
+
 #header-top {
 
     background-color: #333;
@@ -352,7 +356,7 @@
 #nav {
     border: 1px solid #333;
 
-   
+
 
     .navarea {
         display: flex;
@@ -1176,8 +1180,6 @@
                 width: 100%;
                 background-color: #333;
                 height: 50px;
-
-
                 display: none;
 
                 .fa-list-check {
@@ -2277,30 +2279,45 @@
         text-align: center;
 
         .text {
-            a {
+            .btn{
                 text-decoration: none;
                 border: none;
-
-                width: 400px;
+                width: 300px;
                 height: 45px;
-                border: 1px solid black;
+                border: 1.8px solid #ebebeb;
                 background-color: #f4f7ff !important;
-                border-radius: 10px;
-
+                border-radius: 20px;
+                padding-top: 7px;
+                padding-bottom: 7px;
 
                 span {
                     padding: 10px;
                     color: black;
-                    font-size: 20px;
-
+                    font-size: 14px;
+                    font-family: myThirdFont;
                 }
+
 
                 i {
                     color: black;
-                    font-size: 20px;
+                    font-size: 13px;
                 }
-            }
 
+
+                &:hover {
+                    background-color: white !important;
+                    cursor: pointer !important;
+
+                    span {
+                        color: $hover-color !important;
+                    }
+
+                    i {
+                        color: $hover-color !important;
+                    }
+                }
+
+            }
 
 
         }
@@ -2308,7 +2325,11 @@
 
 
 
+
+
     }
+
+
 
 }
 
@@ -2351,10 +2372,7 @@
                 padding-right: 15px;
             }
 
-            li:nth-child(1) {
-                color: $hover-color;
-                border-bottom: 1px solid $hover-color;
-            }
+           
 
             li:hover {
                 color: $hover-color;
@@ -2666,8 +2684,6 @@
 
             img {
                 width: 100%;
-
-
             }
 
 
@@ -2901,6 +2917,39 @@
             img {
                 width: 100%;
 
+
+            }
+
+
+            .sale {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ef837b;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 140px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
 
             }
 
@@ -3340,6 +3389,757 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
+    .card-4 {
+        margin-top: 30px;
+        margin-left: 20px;
+        border: none;
+        width: 130%;
+        height: 93%;
+        border: 1px solid #ccc;
+
+
+        .image {
+            width: 100%;
+            position: relative;
+            transition: all 0.5s;
+
+            img {
+                width: 100%;
+
+
+            }
+
+
+            .new {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(166, 199, 108);
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 140px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+
+
+            .wishlist {
+                position: absolute;
+                display: none;
+
+                .fa-heart {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: $hover-color;
+                    color: #333;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    padding: 5px;
+                    bottom: 230px;
+                    left: 215px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .icons {
+                position: absolute;
+                width: 100%;
+                background-color: #333;
+                height: 50px;
+                top: 210px;
+
+
+                display: none;
+
+                .fa-list-check {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+
+                }
+
+                .fa-glasses {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 175px;
+                }
+
+                .fa-cart-plus {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+
+            .names {
+                position: absolute;
+                top: 270px;
+                left: 10px;
+                line-height: 15px;
+
+                p {
+                    color: #bcbaba;
+                    font-weight: 300;
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .description {
+                position: absolute;
+                top: 290px;
+                left: 10px;
+                line-height: 20px;
+
+                p {
+                    color: black;
+                    font-weight: 500;
+                    width: 200px;
+                    font-size: 15px;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .price {
+                position: absolute;
+                top: 330px;
+                left: 10px;
+                line-height: 17px;
+
+                p {
+
+                    color: $hover-color;
+                    cursor: pointer;
+
+
+                    span {
+                        color: $hover-color;
+                        cursor: pointer;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: myThirdFont;
+                    }
+
+                }
+
+
+
+
+
+            }
+
+
+            .rates {
+                display: flex;
+                position: absolute;
+                top: 360px;
+                left: 10px;
+                line-height: 17px;
+
+
+                .star {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                .star-1 {
+                    color: #bcbaba;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                p {
+                    margin-left: 10px;
+                    color: #bcbaba;
+                    font-family: myThirdFont;
+                }
+            }
+
+
+
+        }
+
+        .image:hover .wishlist {
+            display: block;
+            margin-top: 30px;
+        }
+
+        .image:hover .icons {
+            display: block;
+        }
+
+
+    }
+
+    .card-4:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .card-5 {
+
+        margin-top: 30px;
+        margin-left: 80px;
+        border: none;
+        width: 130%;
+        height: 93%;
+        border: 1px solid #ccc;
+
+
+        .image {
+            width: 100%;
+            position: relative;
+            transition: all 0.5s;
+
+            img {
+                width: 100%;
+
+
+            }
+
+
+            .sale {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ef837b;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 140px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+            .top {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+
+
+            }
+
+            .wishlist {
+                position: absolute;
+                display: none;
+
+                .fa-heart {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: $hover-color;
+                    color: #333;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    padding: 5px;
+                    bottom: 230px;
+                    left: 215px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .icons {
+                position: absolute;
+                width: 100%;
+                background-color: #333;
+                height: 50px;
+                top: 210px;
+
+
+                display: none;
+
+                .fa-list-check {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+
+                }
+
+                .fa-glasses {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 175px;
+                }
+
+                .fa-cart-plus {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+
+            .names {
+                position: absolute;
+                top: 270px;
+                left: 10px;
+                line-height: 15px;
+
+                p {
+                    color: #bcbaba;
+                    font-weight: 300;
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .description {
+                position: absolute;
+                top: 290px;
+                left: 10px;
+                line-height: 20px;
+
+                p {
+                    color: black;
+                    font-weight: 500;
+                    width: 200px;
+                    font-size: 15px;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .price {
+                position: absolute;
+                top: 330px;
+                left: 10px;
+                line-height: 17px;
+
+
+                p {
+
+                    color: $hover-color;
+                    cursor: pointer;
+
+                    span {
+                        color: $hover-color;
+                        cursor: pointer;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: myThirdFont;
+                    }
+
+                }
+
+
+
+
+
+            }
+
+
+            .rates {
+                display: flex;
+                position: absolute;
+                top: 360px;
+                left: 10px;
+                line-height: 17px;
+
+
+                .star {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                .star-1 {
+                    color: #bcbaba;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                p {
+                    margin-left: 10px;
+                    color: #bcbaba;
+                    font-family: myThirdFont;
+                }
+            }
+
+
+
+        }
+
+        .image:hover .wishlist {
+            display: block;
+            margin-top: 30px;
+        }
+
+        .image:hover .icons {
+            display: block;
+        }
+
+
+    }
+
+    .card-5:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .card-6 {
+
+        margin-top: 30px;
+        margin-left: 20px;
+        border: none;
+        width: 130%;
+        height: 93%;
+        border: 1px solid #ccc;
+
+
+        .image {
+            width: 100%;
+            position: relative;
+            transition: all 0.5s;
+
+            img {
+                width: 100%;
+
+
+            }
+
+
+            .sale {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ef837b;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+
+                p:nth-child(2) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 140px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+            }
+
+            .top {
+                position: absolute;
+                left: 20px;
+                text-align: center;
+                align-items: center;
+
+                p:nth-child(1) {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #7dd2ea;
+                    text-align: center;
+                    color: white;
+                    bottom: 170px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+
+
+            }
+
+            .wishlist {
+                position: absolute;
+                display: none;
+
+                .fa-heart {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: $hover-color;
+                    color: #333;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    padding: 5px;
+                    bottom: 230px;
+                    left: 215px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .icons {
+                position: absolute;
+                width: 100%;
+                background-color: #333;
+                height: 50px;
+                top: 210px;
+
+
+                display: none;
+
+                .fa-list-check {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+
+                }
+
+                .fa-glasses {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 175px;
+                }
+
+                .fa-cart-plus {
+                    color: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                }
+
+                i:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+
+            .names {
+                position: absolute;
+                top: 270px;
+                left: 10px;
+                line-height: 15px;
+
+                p {
+                    color: #bcbaba;
+                    font-weight: 300;
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+            .description {
+                position: absolute;
+                top: 290px;
+                left: 10px;
+                line-height: 20px;
+
+                p {
+                    color: black;
+                    font-weight: 500;
+                    width: 200px;
+                    font-size: 15px;
+                    font-family: myThirdFont;
+                }
+
+                p:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .price {
+                position: absolute;
+                top: 330px;
+                left: 10px;
+                line-height: 17px;
+
+
+                p {
+
+                    color: $hover-color;
+                    cursor: pointer;
+
+                    span {
+                        color: $hover-color;
+                        cursor: pointer;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: myThirdFont;
+                    }
+
+                }
+
+
+
+
+
+            }
+
+
+            .rates {
+                display: flex;
+                position: absolute;
+                top: 360px;
+                left: 10px;
+                line-height: 17px;
+
+
+                .star {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                .star-1 {
+                    color: #bcbaba;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+
+                p {
+                    margin-left: 10px;
+                    color: #bcbaba;
+                    font-family: myThirdFont;
+                }
+            }
+
+
+
+        }
+
+        .image:hover .wishlist {
+            display: block;
+            margin-top: 30px;
+        }
+
+        .image:hover .icons {
+            display: block;
+        }
+
+
+    }
+
+    .card-6:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .active-tab{
+        color: $hover-color;
+        border-bottom: 1.2px solid $hover-color;
+    }
+
+   
+
 
 }
 
@@ -3374,10 +4174,7 @@
                 padding-right: 15px;
             }
 
-            li:nth-child(1) {
-                color: $hover-color;
-                border-bottom: 1px solid $hover-color;
-            }
+           
 
             li:hover {
                 color: $hover-color;
@@ -3391,7 +4188,7 @@
 
         margin-top: 20px;
         border: none;
-        border: 1px solid #ccc;
+        
 
         .image {
             width: 100%;
@@ -3663,6 +4460,17 @@
     .card:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
+
+    .active-tab{
+        color: $hover-color;
+        border-bottom: 1.2px solid $hover-color;
+    }
+
+   
+
+
+    
 }
 
 

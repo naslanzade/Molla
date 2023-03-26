@@ -599,7 +599,7 @@
         width: 370px;
         height: 440px;
         position: relative;
-        background-color: #f4f4f4;        
+        background-color: #f4f4f4;
         margin-top: 10px;
 
 
@@ -608,7 +608,7 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                
+
                 transition: all 0.5s;
             }
 
@@ -737,7 +737,7 @@
             }
 
 
-           
+
 
         }
 
@@ -829,14 +829,8 @@
                     color: #333;
                     font-family: myThirdFont;
                     font-weight: 700;
-
-
                 }
 
-                .active-menu {
-                    color: $hover-color;
-
-                }
             }
 
             li:hover span {
@@ -851,38 +845,216 @@
         }
     }
 
-    .description {
-        width: 100%;
-        height: 88%;
-        border: 1px solid #dadada;
+    .active-tab {
+        color: $hover-color;
 
-        h3 {
-            font-family: myThirdFont;
-            font-size: 18px;
-            margin-left: 40px;
-            margin-top: 40px;
-        }
-
-        p {
-            font-family: myThirdFont;
-            font-size: 15px;
-            margin-left: 40px;
-            margin-top: 20px;
-
-        }
-
-        ul {
-            margin-left: 30px;
+    }
 
 
-            li {
+    .comment {
+        .description {
+            width: 100%;
+            height: 88%;
+            border: 1px solid #dadada;
+            line-height: 30px;
+
+            h3 {
+                font-family: myThirdFont;
+                font-size: 16px;
+                margin-left: 30px;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+
+            .first-tab-text {
                 font-family: myThirdFont;
                 font-size: 15px;
+                letter-spacing: 0;
+                font-weight: 300;
+                margin-left: 40px;
+                margin-top: 20px;
+                color: #777;
             }
+
+            .first-tab {
+                margin-left: 30px;
+
+
+                li {
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                    color: #333;
+                }
+            }
+
+            .second-tab-text-1 {
+                font-family: myThirdFont;
+                font-size: 15px;
+                letter-spacing: 0;
+                font-weight: 300;
+                margin-left: 40px;
+                margin-top: 20px;
+                color: #777;
+            }
+
+
+            .second-tab {
+                margin-left: 30px;
+
+
+                li {
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                    color: #333;
+                }
+            }
+
+            .size {
+                font-family: myThirdFont;
+                font-size: 16px;
+                margin-left: 40px;
+                margin-top: 20px;
+                font-weight: 600;
+
+            }
+
+            .text-1 {
+                font-family: myThirdFont;
+                font-size: 15px;
+                letter-spacing: 0;
+                font-weight: 300;
+                margin-left: 40px;
+                margin-top: 10px;
+                color: #777;
+            }
+
+            .third-tab-text {
+                font-family: myThirdFont;
+                font-size: 15px;
+                letter-spacing: 0;
+                font-weight: 300;
+                margin-left: 40px;
+                margin-top: 10px;
+                color: #777;
+
+                a {
+                    text-decoration: none;
+                    border-bottom: 1px solid #777;
+                    color: #333;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $hover-color;
+                        border-bottom: 1px solid $hover-color;
+                    }
+                }
+            }
+
+
+            .observation {
+                display: flex;
+
+
+                .desc {                  
+                    width: 90%;
+                    margin-left: 30px;
+                    line-height: 20px;
+
+
+                    .heading {
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                        letter-spacing: 0;
+                        font-weight: 700;
+                        color: #333;
+
+                    }
+
+                    .four-tab-text {
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                        letter-spacing: 0;
+                        font-weight: 300;                        
+                        color: #777;
+
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: #777;
+                        font-size: 12px;
+
+
+                        .fa-thumbs-down{
+                            margin-left: 10px;
+                        }
+
+
+                        &:hover{
+                            color: $hover-color;
+                            border-bottom: 1px solid $hover-color;
+                        }
+
+                        
+                        
+                    }
+
+
+
+                }
+
+
+
+                .info {
+                    margin-left: 10px;
+                    width: 150px;
+                    
+                    line-height: 20px;
+                    text-align: center;
+
+                    .name {
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                        letter-spacing: 0;
+                        font-weight: 600;
+                        color: #333;
+
+                    }
+
+                    .fa-star {
+                        color: #bcbaba;
+                        font-size: 13px;
+                    }
+
+
+                    .day {
+                        font-family: myThirdFont;
+                        font-size: 15px;
+                        letter-spacing: 0;
+                        
+                        color: #bcbaba;
+                    }
+
+
+                  
+                }
+
+            }
+
+
+            .review{
+                margin-left: 30px;
+
+
+                resize: vertical;
+            }
+
+
         }
 
 
     }
+
 }
 
 #product-card {
@@ -899,29 +1071,30 @@
     }
 
 
-    .card{
+    .card {
         border: none;
+
         .image {
             width: 307px;
             position: relative;
             height: 400px;
-            
-           
-    
+
+
+
             img {
                 width: 100%;
                 height: 65%;
-                
-                
-    
+
+
+
             }
-    
+
             .sale {
                 position: absolute;
                 left: 20px;
                 text-align: center;
                 align-items: center;
-    
+
                 p:nth-child(1) {
                     position: absolute;
                     width: 50px;
@@ -932,9 +1105,9 @@
                     bottom: 200px;
                     text-align: center;
                     align-items: center;
-    
+
                 }
-    
+
                 p:nth-child(2) {
                     position: absolute;
                     width: 50px;
@@ -945,31 +1118,32 @@
                     bottom: 167px;
                     text-align: center;
                     align-items: center;
-    
-    
-    
+
+
+
                 }
-    
+
             }
+
             .new {
                 position: absolute;
                 left: 20px;
                 text-align: center;
                 align-items: center;
-    
+
                 p:nth-child(1) {
                     position: absolute;
                     width: 50px;
                     height: 25px;
-                    background-color:  rgb(166, 199, 108);
+                    background-color: rgb(166, 199, 108);
                     text-align: center;
                     color: white;
                     bottom: 200px;
                     text-align: center;
                     align-items: center;
-    
+
                 }
-    
+
                 p:nth-child(2) {
                     position: absolute;
                     width: 50px;
@@ -980,18 +1154,19 @@
                     bottom: 167px;
                     text-align: center;
                     align-items: center;
-    
-    
-    
+
+
+
                 }
-    
+
             }
+
             .top {
                 position: absolute;
                 left: 20px;
                 text-align: center;
                 align-items: center;
-    
+
                 p:nth-child(1) {
                     position: absolute;
                     width: 50px;
@@ -1002,12 +1177,12 @@
                     bottom: 200px;
                     text-align: center;
                     align-items: center;
-    
+
                 }
-    
-    
+
+
             }
-    
+
             .wishlist {
                 display: none;
                 position: absolute;
@@ -1015,7 +1190,7 @@
                 bottom: 347px;
                 left: 260px;
             }
-    
+
             .glasses {
                 display: none;
                 position: absolute;
@@ -1023,7 +1198,7 @@
                 bottom: 317px;
                 left: 260px;
             }
-    
+
             .compare {
                 display: none;
                 position: absolute;
@@ -1031,8 +1206,8 @@
                 bottom: 287px;
                 left: 260px;
             }
-    
-    
+
+
             .icons {
                 position: absolute;
                 width: 100%;
@@ -1040,7 +1215,7 @@
                 height: 45px;
                 top: 215px;
                 display: none;
-    
+
                 .fa-list-check {
                     color: white;
                     position: absolute;
@@ -1054,13 +1229,13 @@
                     top: 15px;
                     left: 75px;
                 }
-    
+
                 span {
                     color: white;
                     position: absolute;
                     top: 10px;
                     left: 105px;
-    
+
                 }
 
                 i:hover {
@@ -1072,16 +1247,16 @@
                     color: $hover-color;
                     cursor: pointer;
                 }
-    
+
             }
-    
+
             .description {
                 position: absolute;
                 top: 290px;
                 left: 10px;
                 line-height: 20px;
                 text-align: center;
-    
+
                 p {
                     color: black;
                     font-weight: 500;
@@ -1090,14 +1265,14 @@
                     font-family: myThirdFont;
                 }
             }
-    
-            .price{
+
+            .price {
                 position: absolute;
                 top: 340px;
                 left: 75px;
                 line-height: 17px;
-                
-                p{
+
+                p {
                     color: $hover-color;
                     cursor: pointer;
                     font-size: 16px;
@@ -1106,17 +1281,18 @@
                     margin-left: 40px;
 
                 }
-                    span {
-                        color: $hover-color;
-                        cursor: pointer;
-                        font-size: 16px;
-                        font-weight: 600;
-                        font-family: myThirdFont;
-                    }
-    
-                
+
+                span {
+                    color: $hover-color;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: myThirdFont;
+                }
+
+
             }
-    
+
         }
 
         .image:hover .wishlist {
@@ -1139,15 +1315,17 @@
 
 
     }
+
     .card:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-   
+
 }
 
 #foot-side {
 
     margin-top: 100px;
+
     .logo {
 
         .image {

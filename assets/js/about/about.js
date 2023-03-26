@@ -23,7 +23,7 @@ $(document).ready(function () {
             let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
             let productName = this.parentNode.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
-            let productId = parseInt(this.closest(".card").getAttribute("data-id"))
+            let productId = parseInt(this.closest(".box").getAttribute("data-id"))
 
 
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
             let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
             let productName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.getAttribute("src");
-            let productId = parseInt(this.closest(".card").getAttribute("data-id"))
+            let productId = parseInt(this.closest(".box").getAttribute("data-id"))
 
             let existProduct = wishlist.find(m => m.id == productId);
 

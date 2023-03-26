@@ -421,6 +421,33 @@
   background-image: url(../../images/account/login-bg.jpg);
   height: 650px;
 }
+#log .back-image .tab-menu {
+  position: relative;
+}
+#log .back-image .tab-menu .heading {
+  position: absolute;
+  left: 470px;
+  top: 70px;
+  z-index: 1;
+}
+#log .back-image .tab-menu .heading ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly !important;
+}
+#log .back-image .tab-menu .heading ul li {
+  font-size: 27px;
+  font-family: myThirdFont;
+  width: 150px;
+  text-align: center;
+}
+#log .back-image .tab-menu .heading ul li:hover {
+  cursor: pointer;
+  color: rgb(248, 191, 86);
+}
+#log .back-image .tab-menu .heading .active-tab {
+  border-bottom: 2px rgb(248, 191, 86) solid;
+}
 #log .back-image .log-page {
   position: relative;
   width: 600px;
@@ -428,24 +455,6 @@
   background-color: white;
   left: 350px;
   margin-top: 50px;
-}
-#log .back-image .log-page .heading {
-  position: relative;
-  top: 70px;
-}
-#log .back-image .log-page .heading ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly !important;
-}
-#log .back-image .log-page .heading ul li {
-  font-size: 27px;
-  font-family: myThirdFont;
-  width: 150px;
-  text-align: center;
-}
-#log .back-image .log-page .heading ul li:nth-child(1) {
-  border-bottom: 3px rgb(248, 191, 86) solid;
 }
 #log .back-image .log-page .login {
   position: absolute;
@@ -463,6 +472,8 @@
   color: #777;
   background-color: #fafafa;
   border: 1px solid #ebebeb;
+  outline: none;
+  padding-left: 10px;
 }
 #log .back-image .log-page .login-pass {
   position: absolute;
@@ -480,6 +491,8 @@
   color: #777;
   background-color: #fafafa;
   border: 1px solid #ebebeb;
+  outline: none;
+  padding-left: 10px;
 }
 #log .back-image .log-page .footer-button {
   position: absolute;
@@ -510,10 +523,6 @@
   top: 355px;
   left: 220px;
 }
-#log .back-image .log-page .checkbox input {
-  width: 16px;
-  height: 16px;
-}
 #log .back-image .log-page .checkbox label {
   font-family: myThirdFont;
   color: #777;
@@ -521,13 +530,23 @@
 }
 #log .back-image .log-page .checkbox a {
   position: absolute;
-  top: 3px;
+  top: 2px;
   width: 170px;
   left: 150px;
   font-family: myThirdFont;
   color: #777;
   text-decoration: none;
   font-size: 15px;
+}
+#log .back-image .log-page .checkbox input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+  border-radius: 0px;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+}
+#log .back-image .log-page .checkbox input[type=checkbox] {
+  accent-color: black;
 }
 #log .back-image .log-page .choice {
   position: absolute;
@@ -551,6 +570,7 @@
   height: 35px;
   border: 0.5px solid #adacac;
   text-align: center;
+  margin-top: 50px;
 }
 #log .back-image .log-page .socials .link a {
   text-decoration: none;

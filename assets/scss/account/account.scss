@@ -567,19 +567,20 @@
     background-image: url(../../images/account/login-bg.jpg);
     height: 650px;
 
-    .back-image{       
+    .back-image{    
+        
+        
+        .tab-menu{
 
-        .log-page {
             position: relative;
-            width: 600px;
-            height: 550px;            
-            background-color: white;
-            left: 350px;
-            margin-top: 50px;
-    
+            
+
             .heading {
-                position: relative;
+                position: absolute;
+               left: 470px;
                 top: 70px;
+                z-index: 1;
+                
     
                 ul {
                     display: flex;
@@ -592,16 +593,33 @@
                         width: 150px;
                         text-align: center;
                     }
-    
-                    li:nth-child(1) {
-                        border-bottom: 3px $hover-color solid;
-    
+                    
+                    li:hover{
+                        cursor: pointer;
+                        color: $hover-color;
                     }
+                  
     
     
                 }
+
+                .active-tab{
+                    border-bottom: 2px $hover-color solid;
+                }
             }
-        
+
+
+
+            
+        }
+
+        .log-page {
+            position: relative;
+            width: 600px;
+            height: 550px;            
+            background-color: white;
+            left: 350px;
+            margin-top: 50px;
     
             .login {
     
@@ -622,6 +640,8 @@
                     color: #777;
                     background-color: #fafafa;
                     border: 1px solid #ebebeb;
+                    outline: none;
+                    padding-left: 10px;
                 }
     
     
@@ -646,6 +666,8 @@
                     color: #777;
                     background-color: #fafafa;
                     border: 1px solid #ebebeb;
+                    outline: none;
+                    padding-left: 10px;
                 }
     
     
@@ -684,26 +706,21 @@
             }
     
     
-            .checkbox {
-    
+            .checkbox {    
                 position: absolute;
                 top: 355px;
-                left: 220px;
-    
-                input {
-                    width: 16px;
-                    height: 16px;
-                }
-    
+                left: 220px;    
+              
                 label {
                     font-family: myThirdFont;
                     color: #777;
-                    font-size: 15px;
+                    font-size: 15px;                   
+                    
                 }
     
                 a {
                     position: absolute;
-                    top: 3px;
+                    top: 2px;
                     width: 170px;
                     left: 150px;
                     font-family: myThirdFont;
@@ -711,6 +728,21 @@
                     text-decoration: none;
                     font-size: 15px;
                 }
+
+
+                input[type=checkbox]{
+                    width: 17px;
+                    height: 17px;
+                    border-radius:0px;
+                    background-color: #fafafa;
+                    border: 1px solid #ebebeb;
+
+                }
+
+                input[type="checkbox"] {
+                    accent-color: black;
+                }
+                
     
             }
     
@@ -738,21 +770,24 @@
     
     
                 .link {
-    
-                    width: 200px;
+                        width: 200px;
                     height: 35px;
                     border: 0.5px solid #adacac;
                     text-align: center;
+                    margin-top: 50px;
     
                     a {
                         text-decoration: none;
                         color: #333;
                         font-family: myThirdFont;
                         font-size: 13px;
+                        
     
     
                         .fa-google {
                             color: #c33;
+                           
+                            
                         }
     
                         .fa-facebook-f {
