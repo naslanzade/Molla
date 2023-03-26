@@ -523,14 +523,14 @@
   margin-left: 75px;
   color: rgb(248, 191, 86);
 }
-#product .heading .cart span {
+#product .heading .cart .add-wishlist {
   color: #666;
   font-weight: 400;
   margin-left: 10px;
   font-family: myThirdFont;
 }
-#product .heading .cart span:hover {
-  color: white;
+#product .heading .cart .add-wishlist:hover {
+  color: rgb(248, 191, 86);
   cursor: pointer;
   border-bottom: 1px solid rgb(248, 191, 86);
 }
@@ -609,14 +609,14 @@
 }
 #tab-menu .comment .description {
   width: 100%;
-  height: 88%;
+  height: 90%;
   border: 1px solid #dadada;
   line-height: 30px;
 }
 #tab-menu .comment .description h3 {
   font-family: myThirdFont;
   font-size: 16px;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 20px;
   font-weight: 600;
 }
@@ -746,9 +746,84 @@
   letter-spacing: 0;
   color: #bcbaba;
 }
-#tab-menu .comment .description .review {
-  margin-left: 30px;
+#tab-menu .comment .description .review .four-tab-text-2 {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #777;
+}
+#tab-menu .comment .description .review .rate {
+  font-family: myThirdFont;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-left: 40px;
+  color: #333;
+}
+#tab-menu .comment .description .review i {
+  font-size: 13px;
+  color: #777;
+}
+#tab-menu .comment .description .review textarea {
   resize: vertical;
+  margin-left: 40px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #777;
+  font-family: myThirdFont;
+  outline: none;
+  font-size: 13px;
+  padding-left: 10px;
+}
+#tab-menu .comment .description .review .name {
+  font-family: myThirdFont;
+  outline: none;
+  font-size: 13px;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #777;
+  margin-left: 40px;
+  width: 515px;
+}
+#tab-menu .comment .description .review .email {
+  font-family: myThirdFont;
+  outline: none;
+  font-size: 13px;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #777;
+  margin-left: 10px;
+  width: 515px;
+}
+#tab-menu .comment .description .review input[type=checkbox] {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+#tab-menu .comment .description .review a {
+  text-decoration: none;
+  font-family: myThirdFont;
+  color: #777;
+  font-size: 13px;
+}
+#tab-menu .comment .description .review .btn {
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 0px;
+  background-color: rgb(248, 191, 86);
+  border: none;
+  width: 150px;
+}
+#tab-menu .comment .description .review .btn .submit {
+  color: white;
+  font-family: myThirdFont;
+}
+#tab-menu .comment .description .review .btn:hover {
+  background-color: rgb(106, 79, 60);
 }
 
 #product-card {

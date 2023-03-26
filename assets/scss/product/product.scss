@@ -723,18 +723,20 @@
                 color: $hover-color;
             }
 
-            span {
+            .add-wishlist {
                 color: #666;
                 font-weight: 400;
                 margin-left: 10px;
                 font-family: myThirdFont;
             }
 
-            span:hover {
-                color: white;
+            .add-wishlist:hover {
+                color: $hover-color;
                 cursor: pointer;
                 border-bottom: 1px solid $hover-color;
             }
+
+          
 
 
 
@@ -854,14 +856,14 @@
     .comment {
         .description {
             width: 100%;
-            height: 88%;
+            height: 90%;
             border: 1px solid #dadada;
             line-height: 30px;
 
             h3 {
                 font-family: myThirdFont;
                 font-size: 16px;
-                margin-left: 30px;
+                margin-left: 40px;
                 margin-top: 20px;
                 font-weight: 600;
             }
@@ -955,7 +957,7 @@
                 display: flex;
 
 
-                .desc {                  
+                .desc {
                     width: 90%;
                     margin-left: 30px;
                     line-height: 20px;
@@ -974,29 +976,29 @@
                         font-family: myThirdFont;
                         font-size: 15px;
                         letter-spacing: 0;
-                        font-weight: 300;                        
+                        font-weight: 300;
                         color: #777;
 
                     }
 
-                    a{
+                    a {
                         text-decoration: none;
                         color: #777;
                         font-size: 12px;
 
 
-                        .fa-thumbs-down{
+                        .fa-thumbs-down {
                             margin-left: 10px;
                         }
 
 
-                        &:hover{
+                        &:hover {
                             color: $hover-color;
                             border-bottom: 1px solid $hover-color;
                         }
 
-                        
-                        
+
+
                     }
 
 
@@ -1008,7 +1010,7 @@
                 .info {
                     margin-left: 10px;
                     width: 150px;
-                    
+
                     line-height: 20px;
                     text-align: center;
 
@@ -1031,22 +1033,114 @@
                         font-family: myThirdFont;
                         font-size: 15px;
                         letter-spacing: 0;
-                        
+
                         color: #bcbaba;
                     }
 
 
-                  
+
                 }
 
             }
 
 
-            .review{
-                margin-left: 30px;
+            .review {
+                .four-tab-text-2 {
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    font-weight: 300;
+                    margin-left: 40px;
+                    margin-top: 10px;
+                    color: #777;
+                    
+                }
+
+                .rate{
+                    font-family: myThirdFont;
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    font-weight: 300;
+                    margin-left: 40px;                    
+                    color:#333;
+                }
+
+                i{
+                    font-size: 13px;
+                    color: #777;
+                }
 
 
-                resize: vertical;
+                textarea{
+                    resize: vertical;
+                    margin-left: 40px;
+                    background-color: #fff;
+                    border: 1px solid #ebebeb;
+                    color: #777;
+                    font-family:myThirdFont;
+                    outline: none;
+                    font-size: 13px;
+                    padding-left: 10px;
+
+                }
+
+
+                .name{
+                    font-family:myThirdFont;
+                    outline: none;
+                    font-size: 13px;
+                    padding-left: 10px;
+                    background-color: #fff;
+                    border: 1px solid #ebebeb;
+                    color: #777;
+                    margin-left: 40px;
+                    width: 515px;
+                }
+
+                .email{
+                    font-family:myThirdFont;
+                    outline: none;
+                    font-size: 13px;
+                    padding-left: 10px;
+                    background-color: #fff;
+                    border: 1px solid #ebebeb;
+                    color: #777;
+                    margin-left: 10px;
+                    width: 515px;
+                }
+
+                input[type="checkbox"]{
+                    margin-left: 40px;
+                    margin-top: 10px;
+                }
+
+                a{
+                    text-decoration: none;
+                    font-family:myThirdFont;
+                    color: #777;
+                    font-size: 13px;
+
+                }
+
+                .btn{
+                    margin-left: 40px;
+                    margin-top: 20px;
+                    border-radius: 0px;
+                    background-color: $hover-color;
+                    border: none;
+                    width: 150px;
+
+                    .submit{
+                        color: white;
+                        font-family:myThirdFont;
+
+                    }
+                }
+
+                .btn:hover{
+                    background-color: rgb(106, 79, 60);
+                }
+
             }
 
 
