@@ -837,25 +837,40 @@
   font-size: 25px;
   font-weight: 900;
 }
-#product-card .card {
+#product-card .owl-carousel .owl-next {
+  position: relative;
+  float: right;
+  left: 20px;
+  bottom: 270px;
+  color: #999;
+  font-size: 60px;
+}
+#product-card .owl-carousel .owl-prev {
+  position: relative;
+  bottom: 270px;
+  color: #999;
+  font-size: 60px;
+  right: 40px;
+}
+#product-card .owl-carousel .card {
   border: none;
 }
-#product-card .card .image {
+#product-card .owl-carousel .card .image {
   width: 307px;
   position: relative;
   height: 400px;
 }
-#product-card .card .image img {
+#product-card .owl-carousel .card .image img {
   width: 100%;
   height: 65%;
 }
-#product-card .card .image .sale {
+#product-card .owl-carousel .card .image .sale {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .sale p:nth-child(1) {
+#product-card .owl-carousel .card .image .sale p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -866,7 +881,7 @@
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .sale p:nth-child(2) {
+#product-card .owl-carousel .card .image .sale p:nth-child(2) {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -877,13 +892,13 @@
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .new {
+#product-card .owl-carousel .card .image .new {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .new p:nth-child(1) {
+#product-card .owl-carousel .card .image .new p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -894,7 +909,7 @@
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .new p:nth-child(2) {
+#product-card .owl-carousel .card .image .new p:nth-child(2) {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -905,13 +920,13 @@
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .top {
+#product-card .owl-carousel .card .image .top {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .top p:nth-child(1) {
+#product-card .owl-carousel .card .image .top p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -922,28 +937,28 @@
   text-align: center;
   align-items: center;
 }
-#product-card .card .image .wishlist {
+#product-card .owl-carousel .card .image .wishlist {
   display: none;
   position: absolute;
   color: rgb(248, 191, 86);
   bottom: 347px;
   left: 260px;
 }
-#product-card .card .image .glasses {
+#product-card .owl-carousel .card .image .glasses {
   display: none;
   position: absolute;
   color: rgb(248, 191, 86);
   bottom: 317px;
   left: 260px;
 }
-#product-card .card .image .compare {
+#product-card .owl-carousel .card .image .compare {
   display: none;
   position: absolute;
   color: rgb(248, 191, 86);
   bottom: 287px;
   left: 260px;
 }
-#product-card .card .image .icons {
+#product-card .owl-carousel .card .image .icons {
   position: absolute;
   width: 100%;
   background-color: #333;
@@ -951,53 +966,59 @@
   top: 215px;
   display: none;
 }
-#product-card .card .image .icons .fa-list-check {
+#product-card .owl-carousel .card .image .icons .btn-primary {
+  width: 100%;
+  background-color: #333;
+  height: 45px;
+  text-decoration: none;
+  border-radius: 0px;
+  border: 1px solid #333;
+}
+#product-card .owl-carousel .card .image .icons .btn-primary:hover {
+  background-color: rgb(248, 191, 86);
+  color: white;
+  border-radius: 0px;
+  border: 1px rgb(248, 191, 86) solid;
+}
+#product-card .owl-carousel .card .image .icons .fa-list-check {
   color: white;
   position: absolute;
   top: 15px;
   left: 75px;
 }
-#product-card .card .image .icons .fa-cart-plus {
+#product-card .owl-carousel .card .image .icons .fa-cart-plus {
   color: white;
   position: absolute;
   top: 15px;
   left: 75px;
 }
-#product-card .card .image .icons span {
+#product-card .owl-carousel .card .image .icons span {
   color: white;
   position: absolute;
   top: 10px;
   left: 105px;
 }
-#product-card .card .image .icons i:hover {
-  color: rgb(248, 191, 86);
-  cursor: pointer;
-}
-#product-card .card .image .icons span:hover {
-  color: rgb(248, 191, 86);
-  cursor: pointer;
-}
-#product-card .card .image .description {
+#product-card .owl-carousel .card .image .description {
   position: absolute;
   top: 290px;
   left: 10px;
   line-height: 20px;
   text-align: center;
 }
-#product-card .card .image .description p {
+#product-card .owl-carousel .card .image .description p {
   color: black;
   font-weight: 500;
   width: 270px;
   font-size: 17px;
   font-family: myThirdFont;
 }
-#product-card .card .image .price {
+#product-card .owl-carousel .card .image .price {
   position: absolute;
   top: 340px;
   left: 75px;
   line-height: 17px;
 }
-#product-card .card .image .price p {
+#product-card .owl-carousel .card .image .price p {
   color: rgb(248, 191, 86);
   cursor: pointer;
   font-size: 16px;
@@ -1005,26 +1026,26 @@
   font-family: myThirdFont;
   margin-left: 40px;
 }
-#product-card .card .image .price span {
+#product-card .owl-carousel .card .image .price span {
   color: rgb(248, 191, 86);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   font-family: myThirdFont;
 }
-#product-card .card .image:hover .wishlist {
+#product-card .owl-carousel .card .image:hover .wishlist {
   display: block;
 }
-#product-card .card .image:hover .glasses {
+#product-card .owl-carousel .card .image:hover .glasses {
   display: block;
 }
-#product-card .card .image:hover .compare {
+#product-card .owl-carousel .card .image:hover .compare {
   display: block;
 }
-#product-card .card .image:hover .icons {
+#product-card .owl-carousel .card .image:hover .icons {
   display: block;
 }
-#product-card .card:hover {
+#product-card .owl-carousel .card .image:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

@@ -1165,254 +1165,287 @@
     }
 
 
-    .card {
-        border: none;
+    .owl-carousel{
 
-        .image {
-            width: 307px;
+        .owl-next{
             position: relative;
-            height: 400px;
+            float: right;
+            left: 20px;
+            bottom: 270px;
+            color: #999;
+            font-size: 60px;
+        }
+
+        .owl-prev{
+            position: relative;
+            bottom: 270px;
+            color: #999;
+            font-size: 60px;
+            right: 40px;
+        }
 
 
-
-            img {
-                width: 100%;
-                height: 65%;
-
-
-
-            }
-
-            .sale {
-                position: absolute;
-                left: 20px;
-                text-align: center;
-                align-items: center;
-
-                p:nth-child(1) {
+        .card {
+            border: none;
+    
+            .image {
+                width: 307px;
+                position: relative;
+                height: 400px;                  
+    
+    
+                img {
+                    width: 100%;
+                    height: 65%;
+    
+                }
+    
+                .sale {
                     position: absolute;
-                    width: 50px;
-                    height: 25px;
-                    background-color: #ef837b;
-                    text-align: center;
-                    color: white;
-                    bottom: 200px;
+                    left: 20px;
                     text-align: center;
                     align-items: center;
-
+    
+                    p:nth-child(1) {
+                        position: absolute;
+                        width: 50px;
+                        height: 25px;
+                        background-color: #ef837b;
+                        text-align: center;
+                        color: white;
+                        bottom: 200px;
+                        text-align: center;
+                        align-items: center;
+    
+                    }
+    
+                    p:nth-child(2) {
+                        position: absolute;
+                        width: 50px;
+                        height: 25px;
+                        background-color: #7dd2ea;
+                        text-align: center;
+                        color: white;
+                        bottom: 167px;
+                        text-align: center;
+                        align-items: center;  
+    
+    
+                    }
+    
                 }
-
-                p:nth-child(2) {
+    
+                .new {
                     position: absolute;
-                    width: 50px;
-                    height: 25px;
-                    background-color: #7dd2ea;
-                    text-align: center;
-                    color: white;
-                    bottom: 167px;
+                    left: 20px;
                     text-align: center;
                     align-items: center;
-
-
-
+    
+                    p:nth-child(1) {
+                        position: absolute;
+                        width: 50px;
+                        height: 25px;
+                        background-color: rgb(166, 199, 108);
+                        text-align: center;
+                        color: white;
+                        bottom: 200px;
+                        text-align: center;
+                        align-items: center;
+    
+                    }
+    
+                    p:nth-child(2) {
+                        position: absolute;
+                        width: 50px;
+                        height: 25px;
+                        background-color: #7dd2ea;
+                        text-align: center;
+                        color: white;
+                        bottom: 167px;
+                        text-align: center;
+                        align-items: center;
+    
+    
+    
+                    }
+    
                 }
-
-            }
-
-            .new {
-                position: absolute;
-                left: 20px;
-                text-align: center;
-                align-items: center;
-
-                p:nth-child(1) {
+    
+                .top {
                     position: absolute;
-                    width: 50px;
-                    height: 25px;
-                    background-color: rgb(166, 199, 108);
-                    text-align: center;
-                    color: white;
-                    bottom: 200px;
+                    left: 20px;
                     text-align: center;
                     align-items: center;
-
+    
+                    p:nth-child(1) {
+                        position: absolute;
+                        width: 50px;
+                        height: 25px;
+                        background-color: #7dd2ea;
+                        text-align: center;
+                        color: white;
+                        bottom: 200px;
+                        text-align: center;
+                        align-items: center;
+    
+                    }
+    
+    
                 }
-
-                p:nth-child(2) {
+    
+                .wishlist {
+                    display: none;
                     position: absolute;
-                    width: 50px;
-                    height: 25px;
-                    background-color: #7dd2ea;
-                    text-align: center;
-                    color: white;
-                    bottom: 167px;
-                    text-align: center;
-                    align-items: center;
-
-
-
+                    color: $hover-color;
+                    bottom: 347px;
+                    left: 260px;
                 }
-
-            }
-
-            .top {
-                position: absolute;
-                left: 20px;
-                text-align: center;
-                align-items: center;
-
-                p:nth-child(1) {
+    
+                .glasses {
+                    display: none;
                     position: absolute;
-                    width: 50px;
-                    height: 25px;
-                    background-color: #7dd2ea;
-                    text-align: center;
-                    color: white;
-                    bottom: 200px;
-                    text-align: center;
-                    align-items: center;
-
+                    color: $hover-color;
+                    bottom: 317px;
+                    left: 260px;
                 }
-
-
-            }
-
-            .wishlist {
-                display: none;
-                position: absolute;
-                color: $hover-color;
-                bottom: 347px;
-                left: 260px;
-            }
-
-            .glasses {
-                display: none;
-                position: absolute;
-                color: $hover-color;
-                bottom: 317px;
-                left: 260px;
-            }
-
-            .compare {
-                display: none;
-                position: absolute;
-                color: $hover-color;
-                bottom: 287px;
-                left: 260px;
-            }
-
-
-            .icons {
-                position: absolute;
-                width: 100%;
-                background-color: #333;
-                height: 45px;
-                top: 215px;
-                display: none;
-
-                .fa-list-check {
-                    color: white;
+    
+                .compare {
+                    display: none;
                     position: absolute;
-                    top: 15px;
+                    color: $hover-color;
+                    bottom: 287px;
+                    left: 260px;
+                }
+    
+    
+                .icons {
+
+                    .btn-primary{
+                        width: 100%;
+                        background-color: #333;
+                        height: 45px;
+                        text-decoration: none;  
+                        border-radius: 0px;
+                        border: 1px solid #333;
+
+                        
+                        &:hover{
+                            background-color: $hover-color;
+                            color: white;
+                            border-radius: 0px;
+                            border: 1px $hover-color solid;
+                        }
+                    }
+
+
+                    position: absolute;
+                    width: 100%;
+                    background-color: #333;
+                    height: 45px;
+                    top: 215px;
+                    display: none;
+    
+                    .fa-list-check {
+                        color: white;
+                        position: absolute;
+                        top: 15px;
+                        left: 75px;
+                    }
+    
+                    .fa-cart-plus {
+                        color: white;
+                        position: absolute;
+                        top: 15px;
+                        left: 75px;
+                    }
+    
+                    span {
+                        color: white;
+                        position: absolute;
+                        top: 10px;
+                        left: 105px;
+    
+                    }
+    
+                   
+    
+                }
+    
+                .description {
+                    position: absolute;
+                    top: 290px;
+                    left: 10px;
+                    line-height: 20px;
+                    text-align: center;
+    
+                    p {
+                        color: black;
+                        font-weight: 500;
+                        width: 270px;
+                        font-size: 17px;
+                        font-family: myThirdFont;
+                    }
+                }
+    
+                .price {
+                    position: absolute;
+                    top: 340px;
                     left: 75px;
+                    line-height: 17px;
+    
+                    p {
+                        color: $hover-color;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: myThirdFont;
+                        margin-left: 40px;
+    
+                    }
+    
+                    span {
+                        color: $hover-color;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: myThirdFont;
+                    }
+    
+    
                 }
-
-                .fa-cart-plus {
-                    color: white;
-                    position: absolute;
-                    top: 15px;
-                    left: 75px;
-                }
-
-                span {
-                    color: white;
-                    position: absolute;
-                    top: 10px;
-                    left: 105px;
-
-                }
-
-                i:hover {
-                    color: $hover-color;
-                    cursor: pointer;
-                }
-
-                span:hover {
-                    color: $hover-color;
-                    cursor: pointer;
-                }
-
+    
+            }
+    
+            .image:hover .wishlist {
+                display: block;
+            }
+    
+            .image:hover .glasses {
+                display: block;
+            }
+    
+            .image:hover .compare {
+                display: block;
+            }
+    
+            .image:hover .icons {
+                display: block;
             }
 
-            .description {
-                position: absolute;
-                top: 290px;
-                left: 10px;
-                line-height: 20px;
-                text-align: center;
+            .image:hover{
 
-                p {
-                    color: black;
-                    font-weight: 500;
-                    width: 270px;
-                    font-size: 17px;
-                    font-family: myThirdFont;
-                }
+                
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
             }
-
-            .price {
-                position: absolute;
-                top: 340px;
-                left: 75px;
-                line-height: 17px;
-
-                p {
-                    color: $hover-color;
-                    cursor: pointer;
-                    font-size: 16px;
-                    font-weight: 600;
-                    font-family: myThirdFont;
-                    margin-left: 40px;
-
-                }
-
-                span {
-                    color: $hover-color;
-                    cursor: pointer;
-                    font-size: 16px;
-                    font-weight: 600;
-                    font-family: myThirdFont;
-                }
-
-
-            }
-
+    
+    
         }
-
-        .image:hover .wishlist {
-            display: block;
-        }
-
-        .image:hover .glasses {
-            display: block;
-        }
-
-        .image:hover .compare {
-            display: block;
-        }
-
-
-
-        .image:hover .icons {
-            display: block;
-        }
-
+    
+        
 
     }
-
-    .card:hover {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
+   
 
 }
 

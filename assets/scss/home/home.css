@@ -797,25 +797,45 @@
   border-bottom: 2px black solid;
   color: black;
 }
-#tab-menu .card {
+#tab-menu .owl-carousel .owl-next {
+  position: relative;
+  float: right;
+  left: 20px;
+  bottom: 270px;
+  color: #999;
+  font-size: 60px;
+  display: none;
+}
+#tab-menu .owl-carousel .owl-prev {
+  position: relative;
+  bottom: 270px;
+  color: #999;
+  font-size: 60px;
+  right: 40px;
+  display: none;
+}
+#tab-menu .owl-carousel .card {
   border: none;
 }
-#tab-menu .card .image {
-  width: 100%;
-  height: 530px;
+#tab-menu .owl-carousel .card .image {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border: 0.1rem solid #ebebeb;
   position: relative;
   transition: all 0.5s;
 }
-#tab-menu .card .image img {
+#tab-menu .owl-carousel .card .image img {
   width: 100%;
+  height: 60%;
 }
-#tab-menu .card .image .sale {
+#tab-menu .owl-carousel .card .image .sale {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#tab-menu .card .image .sale p:nth-child(1) {
+#tab-menu .owl-carousel .card .image .sale p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -826,7 +846,7 @@
   border-radius: 50%;
   padding: 7px;
 }
-#tab-menu .card .image .sale p:nth-child(2) {
+#tab-menu .owl-carousel .card .image .sale p:nth-child(2) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -837,13 +857,13 @@
   border-radius: 50%;
   padding: 10px;
 }
-#tab-menu .card .image .new {
+#tab-menu .owl-carousel .card .image .new {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#tab-menu .card .image .new p:nth-child(1) {
+#tab-menu .owl-carousel .card .image .new p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -854,7 +874,7 @@
   border-radius: 50%;
   padding: 7px;
 }
-#tab-menu .card .image .new p:nth-child(2) {
+#tab-menu .owl-carousel .card .image .new p:nth-child(2) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -865,13 +885,13 @@
   border-radius: 50%;
   padding: 10px;
 }
-#tab-menu .card .image .top {
+#tab-menu .owl-carousel .card .image .top {
   position: absolute;
   left: 20px;
   text-align: center;
   align-items: center;
 }
-#tab-menu .card .image .top p:nth-child(1) {
+#tab-menu .owl-carousel .card .image .top p:nth-child(1) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -882,11 +902,11 @@
   border-radius: 50%;
   padding: 10px;
 }
-#tab-menu .card .image .wishlist {
+#tab-menu .owl-carousel .card .image .wishlist {
   position: absolute;
   display: none;
 }
-#tab-menu .card .image .wishlist .fa-heart {
+#tab-menu .owl-carousel .card .image .wishlist .fa-heart {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -895,121 +915,119 @@
   border-radius: 50%;
   font-size: 15px;
   padding: 5px;
-  bottom: 250px;
-  left: 270px;
+  bottom: 230px;
+  left: 250px;
 }
-#tab-menu .card .image .wishlist i:hover {
+#tab-menu .owl-carousel .card .image .wishlist i:hover {
   cursor: pointer;
 }
-#tab-menu .card .image .icons {
+#tab-menu .owl-carousel .card .image .icons {
   position: absolute;
   width: 100%;
   background-color: #333;
   height: 50px;
   display: none;
+  top: 250px;
 }
-#tab-menu .card .image .icons .fa-list-check {
+#tab-menu .owl-carousel .card .image .icons .fa-list-check {
   color: white;
   position: absolute;
   top: 20px;
   left: 75px;
 }
-#tab-menu .card .image .icons .fa-glasses {
+#tab-menu .owl-carousel .card .image .icons .fa-glasses {
   color: white;
   position: absolute;
   top: 20px;
   left: 175px;
 }
-#tab-menu .card .image .icons .fa-cart-plus {
+#tab-menu .owl-carousel .card .image .icons .fa-cart-plus {
   color: white;
   position: absolute;
   top: 20px;
   left: 75px;
 }
-#tab-menu .card .image .icons i:hover {
+#tab-menu .owl-carousel .card .image .icons i:hover {
   color: rgb(248, 191, 86);
   cursor: pointer;
 }
-#tab-menu .card .image .names {
+#tab-menu .owl-carousel .card .image .names {
   position: absolute;
-  top: 365px;
+  top: 320px;
   left: 10px;
   line-height: 17px;
 }
-#tab-menu .card .image .names p {
+#tab-menu .owl-carousel .card .image .names p {
   color: #bcbaba;
   font-weight: 300;
   font-family: myThirdFont;
   font-size: 15px;
 }
-#tab-menu .card .image .names p:hover {
+#tab-menu .owl-carousel .card .image .names p:hover {
   color: rgb(248, 191, 86);
   cursor: pointer;
 }
-#tab-menu .card .image .description {
+#tab-menu .owl-carousel .card .image .description {
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 10px;
   line-height: 20px;
 }
-#tab-menu .card .image .description p {
+#tab-menu .owl-carousel .card .image .description p {
   color: black;
   font-weight: 500;
   width: 270px;
   font-size: 17px;
   font-family: myThirdFont;
 }
-#tab-menu .card .image .description p:hover {
+#tab-menu .owl-carousel .card .image .description p:hover {
   color: rgb(248, 191, 86);
   cursor: pointer;
 }
-#tab-menu .card .image .price {
+#tab-menu .owl-carousel .card .image .price {
   position: absolute;
-  top: 447px;
+  top: 400px;
   left: 10px;
   line-height: 17px;
 }
-#tab-menu .card .image .price p {
+#tab-menu .owl-carousel .card .image .price p {
   color: rgb(248, 191, 86);
   cursor: pointer;
 }
-#tab-menu .card .image .price p span {
+#tab-menu .owl-carousel .card .image .price p span {
   color: rgb(248, 191, 86);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   font-family: myThirdFont;
 }
-#tab-menu .card .image .rates {
+#tab-menu .owl-carousel .card .image .rates {
   display: flex;
   position: absolute;
-  top: 490px;
+  top: 450px;
   left: 10px;
   line-height: 17px;
 }
-#tab-menu .card .image .rates .star {
+#tab-menu .owl-carousel .card .image .rates .star {
   color: rgb(248, 191, 86);
   cursor: pointer;
   font-size: 13px;
 }
-#tab-menu .card .image .rates .star-1 {
+#tab-menu .owl-carousel .card .image .rates .star-1 {
   color: #bcbaba;
   cursor: pointer;
   font-size: 13px;
 }
-#tab-menu .card .image .rates p {
+#tab-menu .owl-carousel .card .image .rates p {
   margin-left: 10px;
   color: #bcbaba;
   font-family: myThirdFont;
 }
-#tab-menu .card .image:hover .wishlist {
+#tab-menu .owl-carousel .card .image:hover .wishlist {
   display: block;
 }
-#tab-menu .card .image:hover .icons {
+#tab-menu .owl-carousel .card .image:hover .icons {
   display: block;
-}
-#tab-menu .card:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1217,7 +1235,7 @@
   }
 }
 #background-image {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #background-image .img {
   position: relative;
