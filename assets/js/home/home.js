@@ -209,8 +209,6 @@ $(document).ready(function () {
   
 
 
-
-
     window.onscroll = function () { myFunction() };
 
     var navbar = document.querySelector("#nav");
