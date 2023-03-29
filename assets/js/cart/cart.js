@@ -72,9 +72,11 @@ $(document).ready(function () {
             <td class="name">${product.name}</td>
             <td class="price">${product.price}</td>
             <td class="product-count" data-id = ${product.id}>
+            <div class="pr-count"
             <span class="minus" data-id="${product.id}">-</span>
             <span class="count" data-id=${product.id}>${product.count}</span>
             <span class="plus" data-id="${product.id}">+</span>
+            </div>
             </td>
             <td class="-total">$ ${parseInt(product.price.replace("$", "")) * product.count}</td>
             <td><i class="fa-solid fa-xmark"></i></td>        

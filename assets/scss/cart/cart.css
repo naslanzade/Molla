@@ -517,6 +517,19 @@
   font-family: myThirdFont;
   font-size: 15px;
 }
+#cart .table .product-count {
+  text-align: center;
+}
+#cart .table .product-count .pr-count {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #ebebeb;
+  border-color: #dadada;
+  background-color: #fff;
+  font-family: myThirdFont;
+  font-size: 13px;
+  color: #777;
+}
 #cart .down-side {
   display: flex;
   justify-content: space-between;
