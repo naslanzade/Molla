@@ -510,6 +510,7 @@
 #cart .table tbody .product-count span {
   font-size: 17px;
   font-family: myThirdFont;
+  cursor: pointer;
 }
 #cart .table tbody .-total {
   color: rgb(248, 191, 86);

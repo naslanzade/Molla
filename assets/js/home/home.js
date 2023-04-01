@@ -42,6 +42,10 @@ $(document).ready(function () {
         $(".active-tab").removeClass("active-tab")
         $(this).addClass("active-tab")
 
+        
+
+        
+
         let elements = $(".card .image")
         for (const content of $(elements)) {
             if ($(this).attr("data-id") == $(content).attr("data-id")) {
@@ -51,6 +55,8 @@ $(document).ready(function () {
             else {
                 $(content).addClass("d-none")
             }
+
+            console.log(content.parentNode.parentNode.parentNode);
         }
 
     })
@@ -116,21 +122,18 @@ $(document).ready(function () {
         btn.addEventListener("click", function (e) {
             e.preventDefault();
 
-            let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
+            let productPrice = parseInt(this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.innerText)
             let productName = this.parentNode.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".box").getAttribute("data-id"))   
-                     
-
-            
             let existProduct = basket.find(m => m.id == productId);
-            
 
             if (existProduct != undefined) {
+                let nativePrice = existProduct.price/existProduct.count;
                 existProduct.count += 1;
+                existProduct.price =nativePrice*existProduct.count;
             } else {
                 basket.push({
-
                     id: productId,
                     name: productName,
                     price: productPrice,
@@ -173,8 +176,7 @@ $(document).ready(function () {
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".box").getAttribute("data-id"))           
 
-            let existProduct = wishlist.find(m => m.id == productId);
-            
+            let existProduct = wishlist.find(m => m.id == productId);           
           
             
 
@@ -243,7 +245,15 @@ $(document).ready(function () {
                 loop:false
             }
         }
+
+
+        
     })
+
+    
+
+  
+    
 
 })
 

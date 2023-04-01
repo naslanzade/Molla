@@ -61,8 +61,10 @@ $(document).ready(function () {
     if (totalPrice.innerText == "") {
         totalPrice.innerText = "$ 0"
     }
-
     totalPrice.innerText = `$ ${price(products)}`
+
+    
+   
 
 
     if (products != null) {
@@ -70,15 +72,15 @@ $(document).ready(function () {
             tableBody.innerHTML += `<tr data-id="${product.id}">
             <td><img src="${product.image}" alt=""></td>
             <td class="name">${product.name}</td>
-            <td class="price">${product.price}</td>
+            <td class="price">$ ${parseInt(product.price/product.count)}</td>
             <td class="product-count" data-id = ${product.id}>
-            <div class="pr-count"
+            <div class="pr-count">
             <span class="minus" data-id="${product.id}">-</span>
             <span class="count" data-id=${product.id}>${product.count}</span>
             <span class="plus" data-id="${product.id}">+</span>
             </div>
             </td>
-            <td class="-total">$ ${parseInt(product.price.replace("$", "")) * product.count}</td>
+            <td class="-total">$ ${product.price}</td>
             <td><i class="fa-solid fa-xmark"></i></td>        
         </tr>`
 
@@ -106,7 +108,9 @@ $(document).ready(function () {
 
             localStorage.setItem("basket", JSON.stringify(result));
             this.parentNode.parentNode.remove();
+            totalPrice.innerText = `$ ${price(products)}`
             getProductCount(result)
+            
         })
 
     });
@@ -114,25 +118,21 @@ $(document).ready(function () {
 
     let decreaseButtons = document.querySelectorAll(".minus")
     let increaseButtons = document.querySelectorAll(".plus")
-    let count = document.querySelectorAll(".count");
-
-
-
+   
     decreaseButtons.forEach(btn => {
         btn.addEventListener("click", function () {
             let product = products.find(m => m.id == btn.getAttribute("data-id"))
-            if (product.count > 1) {
-                product.count--;
-                localStorage.setItem("basket", JSON.stringify(products))
+            let nativePrice=product.price/product.count;
+            product.count--;
+            product.price=nativePrice*product.count;
 
-                for (const count of countProduct) {
-                    if (count.getAttribute("data-id") == btn.getAttribute("data-id")) {
-                        count.innerText = count.innerText - 1
-                    }
-                }
-            }
-
-            count.innerText = getBasketCount(JSON.parse(localStorage.getItem("basket")))
+            
+         
+            localStorage.setItem("basket",JSON.stringify(products))            
+            this.nextElementSibling.innerText=product.count;
+            this.parentNode.parentNode.nextElementSibling.innerText=`$ ${product.price}`
+            getProductCount(products)
+            totalPrice.innerText = `$ ${price(products)}`
 
 
         })
@@ -141,17 +141,18 @@ $(document).ready(function () {
 
     increaseButtons.forEach(btn => {
         btn.addEventListener("click", function () {
-            let product = products.find(m => m.id == btn.getAttribute("data-id"))
+            
+            let product = products.find(m => m.id == btn.getAttribute("data-id"));
+            let nativePrice = product.price/product.count;
             product.count++;
+            product.price = nativePrice*product.count;           
+
             localStorage.setItem("basket", JSON.stringify(products))
-
-            for (const count of countProduct) {
-                if (count.getAttribute("data-id") == btn.getAttribute("data-id")) {
-                    count.innerText = parseInt(count.innerText) + 1
-                }
-            }
-
-            count.innerText = getBasketCount(JSON.parse(localStorage.getItem("basket")))
+           
+            this.previousElementSibling.innerText = product.count;            
+            this.parentNode.parentNode.nextElementSibling.innerText = `$ ${product.price}`
+            getProductCount(products)
+            totalPrice.innerText = `$ ${price(products)}`
         })
     });
 
@@ -159,6 +160,8 @@ $(document).ready(function () {
 
 
     function getProductCount(arr) {
+
+       
         let count = 0;
         for (const item of arr) {
             count += item.count
@@ -171,7 +174,7 @@ $(document).ready(function () {
     function price(products) {
         let sum = 0;
         for (const product of products) {
-            sum += parseInt(product.price.replace("$", "")) * product.count;
+            sum += product.price
         }
         return sum;
     }

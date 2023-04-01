@@ -13,7 +13,7 @@ $(document).ready(function () {
         btn.addEventListener("click", function (e) {
             e.preventDefault();
 
-            let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
+            let productPrice = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
             let productName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerText;
             let productImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
             let productId = parseInt(this.closest(".box").getAttribute("data-id"))

@@ -13,6 +13,10 @@
 
 }
 
+// // *{
+// //     border: 1px red solid;
+// // }
+
 #header-top {
 
     background-color: #333;
@@ -1070,280 +1074,284 @@
             display: none;
         }
      
-        .card {
-            border: none;
-    
-            .image {
-               
-                width: 300px;
-                height: 500px;
-                background-color: #fff;
-                border: 0.1rem solid #ebebeb;
-                position: relative;
-                transition: all 0.5s;
-                
-    
-                img {
-                   width: 100%;
-                   height: 60%;
-                 
-                }
-    
-                .sale {
-                    position: absolute;
-                    left: 20px;
-                    text-align: center;
-                    align-items: center;
-    
-                    p:nth-child(1) {
+       
+            .card {
+                border: none;
+        
+                .image {
+                   
+                    width: 300px;
+                    height: 500px;
+                    background-color: #fff;
+                    border: 0.1rem solid #ebebeb;
+                    position: relative;
+                    transition: all 0.5s;
+                    
+        
+                    img {
+                       width: 100%;
+                       height: 60%;
+                     
+                    }
+        
+                    .sale {
                         position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        background-color: #ef837b;
+                        left: 20px;
                         text-align: center;
-                        color: white;
-                        bottom: 200px;
-                        border-radius: 50%;
-                        padding: 7px;
+                        align-items: center;
+        
+                        p:nth-child(1) {
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #ef837b;
+                            text-align: center;
+                            color: white;
+                            bottom: 200px;
+                            border-radius: 50%;
+                            padding: 7px;
+                        }
+        
+                        p:nth-child(2) {
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #7dd2ea;
+                            text-align: center;
+                            color: white;
+                            bottom: 170px;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+        
                     }
-    
-                    p:nth-child(2) {
+        
+                    .new {
                         position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        background-color: #7dd2ea;
+                        left: 20px;
                         text-align: center;
-                        color: white;
-                        bottom: 170px;
-                        border-radius: 50%;
-                        padding: 10px;
+                        align-items: center;
+        
+                        p:nth-child(1) {
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            background-color: rgb(166, 199, 108);
+                            text-align: center;
+                            color: white;
+                            bottom: 200px;
+                            border-radius: 50%;
+                            padding: 7px;
+                        }
+        
+                        p:nth-child(2) {
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #7dd2ea;
+                            text-align: center;
+                            color: white;
+                            bottom: 170px;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+        
                     }
-    
-                }
-    
-                .new {
-                    position: absolute;
-                    left: 20px;
-                    text-align: center;
-                    align-items: center;
-    
-                    p:nth-child(1) {
+        
+                    .top {
                         position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        background-color: rgb(166, 199, 108);
+                        left: 20px;
                         text-align: center;
-                        color: white;
-                        bottom: 200px;
-                        border-radius: 50%;
-                        padding: 7px;
+                        align-items: center;
+        
+                        p:nth-child(1) {
+                            position: absolute;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #7dd2ea;
+                            text-align: center;
+                            color: white;
+                            bottom: 200px;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+        
+        
+        
                     }
-    
-                    p:nth-child(2) {
+        
+                    .wishlist {
                         position: absolute;
-                        width: 50px;
+                        display: none;
+        
+                        .fa-heart {
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            background-color: $hover-color;
+                            color: #333;
+                            border-radius: 50%;
+                            font-size: 15px;
+                            padding: 5px;
+                            bottom: 230px;
+                            left: 250px;
+                        }
+        
+                        i:hover {
+                            cursor: pointer;
+                        }
+                    }
+        
+                    .icons {
+                        position: absolute;
+                        width: 100%;
+                        background-color: #333;
                         height: 50px;
-                        background-color: #7dd2ea;
-                        text-align: center;
-                        color: white;
-                        bottom: 170px;
-                        border-radius: 50%;
-                        padding: 10px;
-                    }
-    
-                }
-    
-                .top {
-                    position: absolute;
-                    left: 20px;
-                    text-align: center;
-                    align-items: center;
-    
-                    p:nth-child(1) {
-                        position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        background-color: #7dd2ea;
-                        text-align: center;
-                        color: white;
-                        bottom: 200px;
-                        border-radius: 50%;
-                        padding: 10px;
-                    }
-    
-    
-    
-                }
-    
-                .wishlist {
-                    position: absolute;
-                    display: none;
-    
-                    .fa-heart {
-                        position: absolute;
-                        width: 25px;
-                        height: 25px;
-                        background-color: $hover-color;
-                        color: #333;
-                        border-radius: 50%;
-                        font-size: 15px;
-                        padding: 5px;
-                        bottom: 230px;
-                        left: 250px;
-                    }
-    
-                    i:hover {
-                        cursor: pointer;
-                    }
-                }
-    
-                .icons {
-                    position: absolute;
-                    width: 100%;
-                    background-color: #333;
-                    height: 50px;
-                    display: none;
-                    top: 250px;
-    
-                    .fa-list-check {
-                        color: white;
-                        position: absolute;
-                        top: 20px;
-                        left: 75px;
-    
-                    }
-    
-                    .fa-glasses {
-                        color: white;
-                        position: absolute;
-                        top: 20px;
-                        left: 175px;
-                    }
-    
-                    .fa-cart-plus {
-                        color: white;
-                        position: absolute;
-                        top: 20px;
-                        left: 75px;
-                    }
-    
-                    i:hover {
-                        color: $hover-color;
-                        cursor: pointer;
-                    }
-                }
-    
-    
-                .names {
-                    position: absolute;
-                    top: 320px;
-                    left: 10px;
-                    line-height: 17px;
-    
-                    p {
-                        color: #bcbaba;
-                        font-weight: 300;
-                        font-family: myThirdFont;
-                        font-size: 15px;
-                    }
-    
-                    p:hover {
-                        color: $hover-color;
-                        cursor: pointer;
-                    }
-    
-                }
-    
-                .description {
-                    position: absolute;
-                    top: 350px;
-                    left: 10px;
-                    line-height: 20px;
-    
-                    p {
-                        color: black;
-                        font-weight: 500;
-                        width: 270px;
-                        font-size: 17px;
-                        font-family: myThirdFont;
-                    }
-    
-                    p:hover {
-                        color: $hover-color;
-                        cursor: pointer;
-                    }
-    
-                }
-    
-    
-                .price {
-                    position: absolute;
-                    top: 400px;
-                    left: 10px;
-                    line-height: 17px;
-    
-    
-                    p {    
-                        color: $hover-color;
-                        cursor: pointer;
-    
-                        span {
+                        display: none;
+                        top: 250px;
+        
+                        .fa-list-check {
+                            color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: 75px;
+        
+                        }
+        
+                        .fa-glasses {
+                            color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: 175px;
+                        }
+        
+                        .fa-cart-plus {
+                            color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: 75px;
+                        }
+        
+                        i:hover {
                             color: $hover-color;
                             cursor: pointer;
-                            font-size: 16px;
-                            font-weight: 600;
+                        }
+                    }
+        
+        
+                    .names {
+                        position: absolute;
+                        top: 320px;
+                        left: 10px;
+                        line-height: 17px;
+        
+                        p {
+                            color: #bcbaba;
+                            font-weight: 300;
+                            font-family: myThirdFont;
+                            font-size: 15px;
+                        }
+        
+                        p:hover {
+                            color: $hover-color;
+                            cursor: pointer;
+                        }
+        
+                    }
+        
+                    .description {
+                        position: absolute;
+                        top: 350px;
+                        left: 10px;
+                        line-height: 20px;
+        
+                        p {
+                            color: black;
+                            font-weight: 500;
+                            width: 270px;
+                            font-size: 17px;
                             font-family: myThirdFont;
                         }
-    
+        
+                        p:hover {
+                            color: $hover-color;
+                            cursor: pointer;
+                        }
+        
                     }
-    
-    
-    
-    
+        
+        
+                    .price {
+                        position: absolute;
+                        top: 400px;
+                        left: 10px;
+                        line-height: 17px;
+        
+        
+                        p {    
+                            color: $hover-color;
+                            cursor: pointer;
+        
+                            span {
+                                color: $hover-color;
+                                cursor: pointer;
+                                font-size: 16px;
+                                font-weight: 600;
+                                font-family: myThirdFont;
+                            }
+        
+                        }
+        
+        
+        
+        
+                    }
+        
+        
+                    .rates {
+                        display: flex;
+                        position: absolute;
+                        top: 450px;
+                        left: 10px;
+                        line-height: 17px;
+        
+        
+                        .star {
+                            color: $hover-color;
+                            cursor: pointer;
+                            font-size: 13px;
+                        }
+        
+                        .star-1 {
+                            color: #bcbaba;
+                            cursor: pointer;
+                            font-size: 13px;
+                        }
+        
+                        p {
+                            margin-left: 10px;
+                            color: #bcbaba;
+                            font-family: myThirdFont;
+                        }
+                    }
+        
+        
+        
                 }
-    
-    
-                .rates {
-                    display: flex;
-                    position: absolute;
-                    top: 450px;
-                    left: 10px;
-                    line-height: 17px;
-    
-    
-                    .star {
-                        color: $hover-color;
-                        cursor: pointer;
-                        font-size: 13px;
-                    }
-    
-                    .star-1 {
-                        color: #bcbaba;
-                        cursor: pointer;
-                        font-size: 13px;
-                    }
-    
-                    p {
-                        margin-left: 10px;
-                        color: #bcbaba;
-                        font-family: myThirdFont;
-                    }
+        
+                .image:hover .wishlist {
+                    display: block;
                 }
-    
-    
-    
+        
+                .image:hover .icons {
+                    display: block;
+                }
+        
+        
             }
-    
-            .image:hover .wishlist {
-                display: block;
-            }
-    
-            .image:hover .icons {
-                display: block;
-            }
-    
-    
-        }
+
+        
+       
     
         
 
@@ -2365,6 +2373,7 @@
 
 #logo {
     margin-top: 50px;
+    
 
 
 
