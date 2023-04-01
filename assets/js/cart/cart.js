@@ -122,17 +122,23 @@ $(document).ready(function () {
     decreaseButtons.forEach(btn => {
         btn.addEventListener("click", function () {
             let product = products.find(m => m.id == btn.getAttribute("data-id"))
-            let nativePrice=product.price/product.count;
-            product.count--;
-            product.price=nativePrice*product.count;
-
+            let nativePrice=product.price/product.count; 
+            if(product.count>1){
+                product.count--;
             
-         
-            localStorage.setItem("basket",JSON.stringify(products))            
-            this.nextElementSibling.innerText=product.count;
-            this.parentNode.parentNode.nextElementSibling.innerText=`$ ${product.price}`
-            getProductCount(products)
-            totalPrice.innerText = `$ ${price(products)}`
+                product.price=nativePrice*product.count;   
+                
+                console.log(product.count)
+                       
+                localStorage.setItem("basket",JSON.stringify(products))            
+                this.nextElementSibling.innerText=product.count;
+                this.parentNode.parentNode.nextElementSibling.innerText=`$ ${product.price}`
+                getProductCount(products)
+                totalPrice.innerText = `$ ${price(products)}`
+            }else{
+                return;
+            }        
+            
 
 
         })

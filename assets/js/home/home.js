@@ -37,13 +37,10 @@ $(document).ready(function () {
     }
 
 
-    $(".menues-edit .item").click(function () {
+    $(".menues-edit .tab").click(function () {
 
         $(".active-tab").removeClass("active-tab")
-        $(this).addClass("active-tab")
-
-        
-
+        $(this).addClass("active-tab")    
         
 
         let elements = $(".card .image")
